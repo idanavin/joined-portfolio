@@ -7,17 +7,76 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @ViewChild('canvas', { static: true }) 
+  @ViewChild('canvas', { static: true })
   canvas: ElementRef<HTMLCanvasElement>;
-  
+  context: CanvasRenderingContext2D;
+
+  colours = ['#f5d76e', '#f7ca18', '#f4d03f', '#ececec', '#ecf0f1', '#a2ded0'];
+  stars = [];
+
   constructor() { }
 
-  private ctx: CanvasRenderingContext2D;
 
   ngOnInit(): void {
-    this.ctx = this.canvas.nativeElement.getContext('2d');
-    this.ctx.lineWidth = 10;
+    this.context = this.canvas.nativeElement.getContext('2d');
+    this.init();
+    console.log(this.context);
+    
   }
 
 
+  init() {
+    this.canvas.nativeElement.width = window.innerWidth, this.canvas.nativeElement.height = window.innerHeight;
+
+    for (var i = 0, l = 100; i < l; i++) {
+      var radius = Math.random() * 1.5;
+      this.stars.push({
+        'radius': radius,
+        'x': Math.random() * this.canvas.nativeElement.width,
+        'y': Math.random() * this.canvas.nativeElement.height,
+        'colour': this.colours[parseInt((Math.random() * 4).toString())],
+        'blur': Math.random() * 10,
+        'pulse': true,
+        'threshold': (radius * 1.25)
+      });
+    }
+    window.requestAnimationFrame(this.draw);
+  };
+
+  generatePulseVariance(star, canvas) {
+    if (star.pulse) {
+      star.radius += 0.075;
+      star.pulse = (star.radius <= star.threshold);
+    }
+    else {
+      if (star.radius >= 1)
+        star.radius -= 0.075;
+      star.pulse = (star.radius <= 1);
+    }
+
+    if (star.x < canvas.width)
+      star.x += 0.35;
+    else
+      star.x = 0;
+
+    return star;
+  };
+
+  draw() {
+    this.context.clearRect(0, 0, this.canvas.nativeElement.width, this.canvas.nativeElement.height);
+
+    for (var i = 0, l = this.stars.length; i < l; i++) {
+      var star = this.stars[i];
+      star = this.generatePulseVariance(star, this.canvas.nativeElement);
+      
+      this.context.beginPath();
+      this.context.arc(star.x, star.y, star.radius, 0, 2 * Math.PI, false);
+      this.context.fillStyle = star.colour;
+      this.context.shadowColor = star.colour;
+      this.context.shadowBlur = star.blur;
+      this.context.fill();
+    }
+
+    window.requestAnimationFrame(this.draw);
+  };
 }
