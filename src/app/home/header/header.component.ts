@@ -19,6 +19,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.context = this.canvas.nativeElement.getContext('2d');
+    
     this.init();
     console.log(this.context);
     
@@ -40,7 +41,7 @@ export class HeaderComponent implements OnInit {
         'threshold': (radius * 1.25)
       });
     }
-    window.requestAnimationFrame(this.draw);
+    requestAnimationFrame(() =>this.draw());
   };
 
   generatePulseVariance(star, canvas) {
@@ -77,6 +78,6 @@ export class HeaderComponent implements OnInit {
       this.context.fill();
     }
 
-    window.requestAnimationFrame(this.draw);
+    requestAnimationFrame(() =>this.draw());
   };
 }
