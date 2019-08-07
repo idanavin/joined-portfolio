@@ -13,9 +13,8 @@
     &__text-area {
         color: white;
         text-align: center;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-weight: 300;
-        display: inline;
+        font-family: monospace;
+        font-weight: 200;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -26,12 +25,23 @@
         }
 
         &__button {
+            padding: 12px 0;
             height: 60px;
             width: 120px;
             border: 2px solid white;
             position: relative;
             left: 50%;
             transform: translateX(-50%);
+            
+            &__svg {
+                height: 30px;
+                width: 30px;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    transform: rotate(90deg);
+                }
+            }
         }
     }
 }
