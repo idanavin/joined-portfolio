@@ -9,12 +9,13 @@ export class HeaderComponent implements OnInit {
 
   @ViewChild('canvas', { static: true })
   canvas: ElementRef<HTMLCanvasElement>;
+  // project: ElementRef;
   context: CanvasRenderingContext2D;
 
   colours = ['#f5d76e', '#f7ca18', '#f4d03f', '#ececec', '#ecf0f1', '#a2ded0'];
   stars = [];
 
-  constructor() { }
+  constructor(public project: ElementRef) { }
 
 
   ngOnInit(): void {
@@ -80,4 +81,9 @@ export class HeaderComponent implements OnInit {
 
     requestAnimationFrame(() =>this.draw());
   };
+
+  gotoProjects() {
+    let el = this.project.nativeElement.parentElement.querySelector('.portfolio');
+    el.scrollIntoView();
+  }
 }
