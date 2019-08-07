@@ -1,5 +1,9 @@
+
+h5, h2 {
+    text-align: center;
+}
 .html-css-js{
-    width:150px;
+    width:200px;
     height: 75px;
     margin: auto;
     display: block;
@@ -19,3 +23,23 @@
     display: block;
 }
 
+.logo-container {
+    display: flex;
+    margin: auto;
+   
+}
+
+.logo {
+    display: inline-flex;
+    width:75px;
+    height: 75px;
+    
+}
+
+.backend-container{
+    display: inline-flex;
+    border: 2px solid black;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
