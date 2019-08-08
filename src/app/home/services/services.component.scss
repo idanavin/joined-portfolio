@@ -1,12 +1,18 @@
 
 h5, h2 {
     text-align: center;
+    display: block;
+    margin: auto;
+}
+h5 {
+    margin-bottom: 40px;
 }
 .html-css-js{
     width:200px;
     height: 75px;
     margin: auto;
     display: block;
+    margin-bottom: 30px;
 }
 
 .wordpress {
@@ -14,6 +20,7 @@ h5, h2 {
     height: 75px;
     margin: auto;
     display: block;
+    margin-bottom: 30px;
 }
 
 .angular {
@@ -26,6 +33,7 @@ h5, h2 {
 .logo-container {
     display: flex;
     margin: auto;
+    margin-bottom: 30px;
    
 }
 

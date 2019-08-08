@@ -2,12 +2,17 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 .h2, h2 {
-    margin-bottom: 50px !important;
+    margin-bottom: 40px !important;
     margin-top: 50px !important;
     text-align: center;
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1 h2 h3 h4 h5 h6 p {
     font-family: 'PT Serif', serif;
 
+}
+
+
+.section {
+    margin-bottom: 60px;
 }

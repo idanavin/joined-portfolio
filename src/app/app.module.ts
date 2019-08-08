@@ -12,6 +12,7 @@ import { PortfolioComponent } from './home/portfolio/portfolio.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { ModalComponent } from './home/portfolio/modal/modal.component';
+import { BlurbsComponent } from './home/blurbs/blurbs.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ModalComponent } from './home/portfolio/modal/modal.component';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
-    ModalComponent
+    ModalComponent,
+    BlurbsComponent
   ],
   imports: [
     BrowserModule,
