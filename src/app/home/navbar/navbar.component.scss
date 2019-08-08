@@ -1,0 +1,53 @@
+@keyframes changeColor {
+    0% {
+        color: white;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 999;
+}
+.nav {
+    &__container {
+        margin-top: -17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: black;
+        width: 100%;
+
+        border-bottom: 2px solid blue;
+    }
+
+    &__box {
+        width: 180px;
+        display: inline-block;
+        position: relative;
+        color: white;
+        margin-bottom: 2px;
+
+        &:hover {
+            cursor: pointer;
+            color: blue;
+            margin: 0;
+            animation: changeColor 0.4s ease-in-out;
+            border-bottom: 2px solid blue;
+            
+        }
+    }
+  
+    &__button {
+        font-family: 'Roboto'; 
+        text-align: center;
+        text-transform: uppercase;
+        user-select: none;
+
+        
+    
+    }
+}
