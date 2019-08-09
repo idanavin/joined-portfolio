@@ -3,46 +3,44 @@
         color: white;
     }
     100% {
-        color: blue;
+        color: #0F4263;
     }
 }
 
 .sticky{
     position: sticky;
-    top: 0;
+  
     overflow: hidden;
     z-index: 999;
 }
 .nav {
     &__container {
-        margin-top: -17px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-color: black;
+        
+        
+        
         width: 100%;
-
-        border-bottom: 2px solid blue;
+        margin-bottom: 55px;
+        border-bottom: 2px solid #3498DB;
     }
 
     &__box {
         width: 180px;
         display: inline-block;
         position: relative;
-        color: white;
-        margin-bottom: 2px;
+        color: black;
+        
 
         &:hover {
             cursor: pointer;
-            color: blue;
+            color: #0F4263;
             margin: 0;
             animation: changeColor 0.4s ease-in-out;
-            border-bottom: 2px solid blue;
+            border-bottom: 2px solid #0F4263;
             
         }
     }
   
     &__button {
-        font-family: 'Roboto'; 
         text-align: center;
         text-transform: uppercase;
         user-select: none;

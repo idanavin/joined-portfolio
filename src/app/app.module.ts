@@ -27,7 +27,7 @@ import { BlurbsComponent } from './home/blurbs/blurbs.component';
     ContactComponent,
     FooterComponent,
     ModalComponent,
-    BlurbsComponent
+    BlurbsComponent,
   ],
   imports: [
     BrowserModule,
