@@ -1,9 +1,9 @@
 .contact {
     height: 500px;
     width: 100%;
-    
+    display: block;
     &__canvas {
-        height: 600px;
+        height: 500px;
         width: 100%;
         position: absolute;
 
@@ -16,7 +16,7 @@
         font-family: monospace;
         font-weight: 200;
         position: relative;
-        top: 20%;
+        top: 50%;
         transform: translateY(-50%);
         // left: 50%;
 
@@ -32,13 +32,7 @@
             }
         }
 
-        &__subtittle{
-
-            .blue {
-                color: #3499DB;
-            }
-
-        }
+     
 
 
 
@@ -65,4 +59,44 @@
             }
         }
     }
+}
+
+
+.form-container{
+    margin:auto;
+    display: inline-block;
+    border: 2px solid #3499DB;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+h4{
+    margin-bottom: 30px;
+}
+
+.submit-button {
+    padding: 12px 0;
+    height: 70px;
+    width: 120px;
+    border: 2px solid white;
+    background-color: #FF6530;  
+    margin: 30px auto;
+
+}
+
+.submit {
+    color: white;
+    font-size: 30px;
+    margin:auto;
+}
+
+.orange{
+    color: #FF6530;
+}
+
+input {
+    width: 400px;
+    height: 50px;
 }

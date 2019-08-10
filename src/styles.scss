@@ -1,17 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
-
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
 .h2, h2 {
     margin-bottom: 40px !important;
     margin-top: 50px !important;
     text-align: center;
 }
 
-h1 h2 h3 h4 h5 h6 p {
+h1 ,h2, h3 ,h4, h5, h6, p  {
     font-family: 'PT Serif', serif;
+    line-height: 1.5 ;
+   
 
 }
 
+.orange {
+    color: #FF6530;
+}
+.blue {
+    color: #3498db;
+    
+    
+}
 
 .section {
     margin-bottom: 60px;

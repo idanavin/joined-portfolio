@@ -6,7 +6,9 @@
         color: #0F4263;
     }
 }
-
+.buttons-container{
+    display: block;
+}
 .sticky{
     position: sticky;
   
@@ -19,8 +21,8 @@
         
         
         width: 100%;
-        margin-bottom: 55px;
-        border-bottom: 2px solid #3498DB;
+        border-top: 2px solid #FF6530;
+        border-bottom: 2px solid #FF6530;
     }
 
     &__box {
@@ -48,4 +50,24 @@
         
     
     }
+}
+
+.nav-link.active {
+    background-color: #3499DB;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+    border-right: 1px solid #FF6530;
+    border-left: 1px solid #FF6530;
+    
+}
+
+.nav-link.active  {
+    background-color: #3499DB;
+   
+}
+
+a.nav-link {
+    color: black;
 }

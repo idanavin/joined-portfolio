@@ -1,4 +1,16 @@
+.container-fluid {
+    margin-bottom: 90px;
+}
 
+.blurbs-container{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.blurb{
+    width: 250px;
+    margin:auto;
+}
 h5, h2 {
     text-align: center;
     display: block;
@@ -26,19 +38,26 @@ h5 {
 .angular {
     width:75px;
     height: 75px;
-    margin: auto;
+    margin:auto;
     display: block;
+    
+   
 }
-
+svg {
+    display: block;
+    margin:auto;
+}
 .logo-container {
-    display: flex;
-    margin: auto;
+    display: block;
+   
     margin-bottom: 30px;
    
 }
 
+
+
 .logo {
-    display: inline-flex;
+    margin: auto;
     width:75px;
     height: 75px;
     
@@ -46,8 +65,7 @@ h5 {
 
 .backend-container{
     display: inline-flex;
-    border: 2px solid black;
-    margin-left: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
+   
+  
 }

@@ -1,0 +1,73 @@
+.header {
+    height: 80vh;
+    
+    
+    
+    &__canvas {
+        //height: 100%;
+        width: 100%;
+        position: absolute;
+        height: 80vh;
+        background-color: black;
+        
+    }
+    &__text-area {
+        color: white;
+        text-align: center;
+        font-family: monospace;
+        font-weight: 200;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        // left: 50%;
+
+        &__tittle {
+            font-size: 3rem;
+
+            .red {
+                color: red;
+            }
+
+            .blue {
+                color: #3499DB;
+            }
+
+            .orange {
+                color: #FF6530;
+            }
+        }
+
+        &__subtittle{
+
+            .blue {
+                color: #3499DB;
+            }
+
+        }
+
+
+
+        &__button {
+            padding: 12px 0;
+            height: 60px;
+            width: 120px;
+            border: 2px solid white;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            &__svg {
+                transition: all 0.5s ease;
+                height: 30px;
+                width: 30px;
+            }
+
+            &:hover {
+                svg {
+                    transform: rotate(90deg) scale(1.3);
+                    fill: red;
+                }
+            }
+        }
+    }
+}

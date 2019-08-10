@@ -1,12 +1,12 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-
+import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-
+  @ViewChild('f', { static: true }) loginForm: NgForm;
   @ViewChild('canvas', { static: true })
   canvas: ElementRef<HTMLCanvasElement>;
   // project: ElementRef;

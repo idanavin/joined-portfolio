@@ -1,14 +1,35 @@
 <nav class="nav__container container-fluid" #stickyMenu [class.sticky] = "sticky">
-  <div class="nav__box">
-    <p class="nav__button">Home</p>
-  </div>
-  <div class="nav__box">
-    <p class="nav__button">About Me</p>
-  </div>
-  <div class="nav__box">
-    <p class="nav__button" (click)="onClick()">Portfolio</p>
-  </div>
-  <div class="nav__box">
-    <p class="nav__button" (click)="onClick()">Contact</p>
-  </div>
+    <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Contact</a>
+        </li>
+      </ul>
+ 
 </nav>
+
+
+<!--
+
+
+      <div class="nav__box">
+          <p class="nav__button">Home</p>
+        </div>
+        <div class="nav__box">
+          <p class="nav__button">About Me</p>
+        </div>
+        <div class="nav__box">
+          <p class="nav__button" (click)="onClick()">Portfolio</p>
+        </div>
+        <div class="nav__box">
+          <p class="nav__button" (click)="onClick()">Contact</p>
+        </div>
+-->
