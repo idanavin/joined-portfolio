@@ -7,6 +7,7 @@
     position: relative;
     font-family: 'PT Serif', serif;
     font-size: 70px;
+    text-align: center;
 
     &__tittle {
         position: absolute;
@@ -17,19 +18,23 @@
 
     &__subtittle {
         position: absolute;
-        width: 30vw;
+        width: 50vw;
         right: 5%;
         bottom: 10%;
         color: white;
+
     }
 
     &__img {
         position: absolute;
-        top: 0;
-        right: 0;
-        opacity: 1;
-        height: 65vh;
-        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 300px;
+        width: 635px;
+        background: url("~/assets/laptop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &__button {

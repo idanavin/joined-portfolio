@@ -1,14 +1,17 @@
 .container-fluid {
-    margin-bottom: 90px;
+    margin-bottom: 300px;
+    margin-top: 130px;
 }
-
-.blurbs-container{
+h2 {
+    margin: auto;
+}
+.services-container{
     margin-left: 15px;
     margin-right: 15px;
 }
 
-.blurb{
-    width: 250px;
+.service{
+    width: 70%;
     margin:auto;
 
     &__tittle {
@@ -18,11 +21,11 @@
     
     
     &__icon {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         background-size: contain;
         background-repeat: no-repeat;
-        margin: 10px auto;
+        margin: 60px auto;
         
         &--1 {
             background-image: url("~/assets/html-logo-new.png");
@@ -40,10 +43,10 @@
             background-image: url("~/assets/angular.png");
         }
         &--6 {
-            background-image: url("~/assets/firebase-logo.png");
+            background-image: url("~/assets/nodejs.png");
         }
         &--7 {
-            background-image: url("~/assets/nodejs.png");
+            background-image: url("~/assets/firebase-logo.png");
         }
     }
 }
@@ -51,5 +54,17 @@
 .util {
     &__margin-bottom {
         margin-bottom: 30px;
+    }
+
+    &__border-top{
+        border-left: 2px solid #7DAAC7;
+        height: 150px;
+        margin-bottom: 150px;
+      
+    }
+
+    &__border-bottom{
+        border-left: 2px solid #7DAAC7;
+        height: 150px;
     }
 }
