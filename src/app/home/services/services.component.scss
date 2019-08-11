@@ -10,62 +10,46 @@
 .blurb{
     width: 250px;
     margin:auto;
-}
-h5, h2 {
-    text-align: center;
-    display: block;
-    margin: auto;
-}
-h5 {
-    margin-bottom: 40px;
-}
-.html-css-js{
-    width:200px;
-    height: 75px;
-    margin: auto;
-    display: block;
-    margin-bottom: 30px;
-}
 
-.wordpress {
-    width:75px;
-    height: 75px;
-    margin: auto;
-    display: block;
-    margin-bottom: 30px;
-}
-
-.angular {
-    width:75px;
-    height: 75px;
-    margin:auto;
-    display: block;
+    &__tittle {
+        text-align: center;
+        font-size: 1.2rem;
+    }
     
-   
-}
-svg {
-    display: block;
-    margin:auto;
-}
-.logo-container {
-    display: block;
-   
-    margin-bottom: 30px;
-   
-}
-
-
-
-.logo {
-    margin: auto;
-    width:75px;
-    height: 75px;
     
+    &__icon {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 10px auto;
+        
+        &--1 {
+            background-image: url("~/assets/html-logo-new.png");
+        }
+        &--2 {
+            background-image: url("~/assets/css3-logo-new.png");
+        }
+        &--3 {
+            background-image: url("~/assets/js-logo-new.png");
+        }
+        &--4 {
+            background-image: url("~/assets/wordpress.png");
+        }
+        &--5 {
+            background-image: url("~/assets/angular.png");
+        }
+        &--6 {
+            background-image: url("~/assets/firebase-logo.png");
+        }
+        &--7 {
+            background-image: url("~/assets/nodejs.png");
+        }
+    }
 }
 
-.backend-container{
-    display: inline-flex;
-    
-   
-  
+.util {
+    &__margin-bottom {
+        margin-bottom: 30px;
+    }
 }

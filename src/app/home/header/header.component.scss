@@ -2,18 +2,66 @@
     font-family: 'Permanent Marker', cursive;
     */
 
-body {
+.header {
+    height: 90vh;
+    position: relative;
+    font-family: 'PT Serif', serif;
+    font-size: 70px;
+
+    &__tittle {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 70px;
+    }
+
+    &__subtittle {
+        position: absolute;
+        width: 30vw;
+        right: 5%;
+        bottom: 10%;
+        color: white;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 1;
+        height: 65vh;
+        width: 100%;
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 10%;
+        left: 40%;
+
+        border: 2px solid #EAEAEA;
+        height: 60px;
+        width: 180px;
+
+        &__text{
+            display: inline-block;
+            transform: translateY(-75%);
+            padding: 12px 0px 12px 10px;
+            color: #EAEAEA;
+            font-size: 22px;
+        }
+
+        &__svg{
+            display: inline-block;
+            transform: translate(50%, -100%);
+            transition: all 0.5s ease;
+            height: 30px;
+            width: 30px;
+            fill: #EAEAEA;
+        }
+    }
+
     
-    
-    margin: 0;
-    -webkit-font-smoothing: antialiased!important;
-    text-rendering: optimizeLegibility!important;
 }
 
-.container-fluid {
-    height: 80vh;
-    
-}
 
 .panels {
     fill: #eaeaea;
@@ -22,62 +70,29 @@ body {
 }
 
 .light {
-    fill: white;
+    fill: #EAEAEA;
 }
 
 .dark {
-    fill: black;
+    fill: #242021;
 }
+
+
 .orange {
     color: #FF6530;
 }
 .blue {
     color: #3498db;
     font-family: 'PT Serif', serif;
-
+   display: block;
+   text-align: center;
     
 }
-.a{
-    font-size: 50px;
-}
 
-.t{
-    font-size: 50px;
-}
-.at {
-  
-   
-    font-family: 'PT Serif', serif;
-    font-size: 50px;
 
+.laptop{
     position: absolute;
-    display: flex;
-    top: 30%;
-    left: 45%;
-     /*
-    NEED TO DO FLEX POSITION, A at White area with black color
-    T at black area with white color
-
-
-    */
-
+    bottom: 0;
+    right: 0;
 }
-.first-sentence {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    font-size: 70px;
-    font-family: 'PT Serif', serif;}
-
-
-.second-sentence{
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    font-size: 70px;
-    font-family: 'PT Serif', serif;
-    color: white;
-
-}
-
 
