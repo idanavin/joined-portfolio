@@ -6,6 +6,34 @@
     
 }
 
+.row{
+    margin-bottom: 50px;
+}
+.about{
+    &__card{
+        width: 25rem;
+
+        &__img{
+            margin-top: 30px;
+        }
+        &__body{
+
+        }
+
+        &__title{
+            margin-bottom: 40px;
+        }
+
+        &__text{
+            margin-bottom: 70px;
+            padding-top: 20px;
+        }
+
+    }
+}
+.card {
+    margin: auto;
+}
 img {
         width: 200px;
         height: 200px;

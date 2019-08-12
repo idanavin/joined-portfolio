@@ -1,16 +1,7 @@
+@import "~src/scss/keyframes";
+
 .blurbs {
     
-    // padding-left: 20px;
-    /*
-    background-image: linear-gradient(to bottom right,rgba(52, 152, 219, 0.9), rgba(255, 100, 48, 0.9)), url("~/assets/customer-layout.jpg"), url("~/assets/laptop-layout.jpg");
-    background-size: cover, contain;
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, no-repeat;
-    */
-     /* 
-         background-image: linear-gradient(to bottom right,rgba(52, 152, 219, 0.8), rgba(255, 100, 48, 0.8)), url("~/assets/customer-layout.jpg");
-
-     */
     background-color: rgba(52, 152, 219, 0.8);
     background-image: url("~/assets/customer-layout.jpg");
     background-size: cover;
@@ -20,7 +11,6 @@
     &__overlay {
         display: inline-block;
         padding-top: 3%;
-        // padding-bottom: 90px;
         background-color: rgba(52, 152, 219, 0.5);
         height: 750px;
         width: 100%;
@@ -28,19 +18,35 @@
 }
 
 .blurb {
-    opacity: 1;
     text-align: center;
-    // background-color: white;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
     height: 300px;
     width: 300px;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 20px auto;
+    border: 6px solid #FF6530;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    &:hover {
+        .blurb {
 
+            &__tittle {
+            }
+            &__icon {
+                animation: moveUR 2s ease-in-out;
+            }
+            &__description {
+                display: block;
+                animation: moveUp 2s ease-in-out;
+            }
+        }
+    }
 
     &__tittle {
-        font-size: 1.8rem;
-        padding-top: 50px;
-        margin-bottom: 60px;
+        font-size: 2.5rem;
+        font-family: 'Gochi Hand', cursive;
+        text-transform: uppercase;
+        padding-top: 30px;
+        margin-bottom: 50px;
     }
 
     &__icon {
@@ -48,7 +54,7 @@
         height: 80px;
         width: 80px;
         margin: 50px auto;
-        // fill: rgba(255, 149, 114);
+        fill: #FF6530;
     }
 
     &__description {
@@ -63,9 +69,9 @@
 .util {
 
     &__margin-left {
-        margin-left: 45%;
+        margin-left: 25%;
     }
     &__margin-right {
-        margin-right: 45%;
+        margin-right: 25%;
     }
 }
