@@ -25,6 +25,7 @@
     margin: 20px auto 20px auto;
     border: 6px solid #FF6530;
     background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
     
     &:hover {
         .blurb {
@@ -33,10 +34,12 @@
             }
             &__icon {
                 animation: moveUR 2s ease-in-out;
+                animation-fill-mode: forwards;
             }
             &__description {
                 display: block;
                 animation: moveUp 2s ease-in-out;
+                animation-fill-mode: forwards;
             }
         }
     }
@@ -59,7 +62,8 @@
 
     &__description {
         display: none;
-        font-size: 1.2rem;
+        margin: auto;
+        font-size: 1rem;
         width: 90%;
         height: 200px;
 
