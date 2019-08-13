@@ -17,6 +17,7 @@
 
 
 
+
 .text {
     opacity: 0;
 }
@@ -34,23 +35,32 @@
     padding: 7px 0;
     text-align: center;
     color: #FF5524;
+    
+   
 }
 
 .button:hover{
     background-color: #FF5524 ;
     color: white;
+   
 }
 
 .card:hover {
-    background: white; 
-    background-size: cover;
+     background: white; 
+     background-size: cover;
 
+    
     .text{
         opacity: 1;
+        text-align: center;
+        animation: moveDown 1s ease-in-out;
+        animation-fill-mode: forwards;
     }
 
     .button {
         opacity: 1;
+        animation: moveUp 1s ease-in-out;
+        animation-fill-mode: forwards;
     }
 
 }

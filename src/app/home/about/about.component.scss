@@ -11,25 +11,24 @@
 }
 
 
-.about{
-    // linear-gradient(to bottom right, rgba(255, 100, 48, 0.7),#3498dbb0),
-    // background-image:  linear-gradient(to bottom, #3498dbb0,#ffffff46), url("~/assets/laptop-layout-new.jpg");
-    // background-size: cover;
-    // // background-position: top;
-    // background-position-y: 390px;
-    // background-repeat: no-repeat;
-    
+.about{    
     
     &__overlay {
-        background-image: linear-gradient(to top, #000000,#3498dbb0);
-        padding-bottom: 50px;
-       
-        
+        background-image: linear-gradient(to left, #3498db 50%, #FF6530 50%);
+        padding-bottom: 200px;
     }
     &__card{
         width: 25rem;
         margin: auto;
         background-color: rgba(255, 255, 255, 0.7);
+
+        &--1 {
+            border: 5px solid #3498db;
+        }
+
+        &--2 {
+            border: 5px solid #FF6530;
+        }
 
         &__img{
             margin-top: 30px;

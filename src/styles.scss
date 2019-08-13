@@ -2,11 +2,12 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 *{
-    // max-width: 1600px;
+    margin: 0;
     
 }
 body {
-   
+    max-width: 1600px;
+    margin: auto;
 }
 .row {
     margin-left: 0;

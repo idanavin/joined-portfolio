@@ -33,12 +33,12 @@
             &__tittle {
             }
             &__icon {
-                animation: moveUR 2s ease-in-out;
+                animation: moveUR 1s ease-in-out;
                 animation-fill-mode: forwards;
             }
             &__description {
                 display: block;
-                animation: moveUp 2s ease-in-out;
+                animation: moveUp 1s ease-in-out;
                 animation-fill-mode: forwards;
             }
         }
