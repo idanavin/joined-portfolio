@@ -1,45 +1,32 @@
 <section class="portfolio">
     <div class="row">
-            <h2>Our Latest Projects</h2>
+        <h2>Our Latest Projects</h2>
     </div>
-    
+
 
     <div class="row">
-            <div class="col-sm-6 col-md-6">
-                
-                    <div class="card">
-                        
-
-                        
-                            <div class="text">
-                                <h3>What a Wonderful Text</h3>
-                                <span><p>atar number 1 ichiwan of israel</p></span>
-                            </div>
-                    
-                            <div class="button" (click) = "clickBy()"><span>Learn More</span> </div>
-                        </div>
-                    
-                        <app-modal *ngIf="clicked" (close) = "clickBy()"></app-modal>
-                  
+        <div class="col-sm-6 col-md-6">
+            <div class="card card--1">
+                <div class="card__text-area text">
+                    <h3 class="card__text-area__tittle">Dharma-Photography</h3>
+                    <span class="card__text-area__subtittle">Javascript Html and Css</span>
                 </div>
-   
-
-   
-            <div class="col-sm-6 col-md-6">
-                    <div class="card">
-                            <div class="text">
-                                <h3>What a Wonderful Text</h3>
-                                <span><p>atar number 1 ichiwan of israel</p></span>
-                            </div>
-                    
-                            <div class="button" (click) = "clickBy()"><span>Learn More</span> </div>
-                        </div>
-                    
-                        <app-modal *ngIf="clicked" (close) = "clickBy()"></app-modal>
-
+                <div class="card__btn button" (click)="clickBy()"><span>Learn More</span> </div>
+            </div>
+            <app-modal *ngIf="clicked" (close)="clickBy()"></app-modal>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <div class="card card--2">
+                <div class="card__text-area text">
+                    <h3 class="card__text-area__tittle">Art Of Idan</h3>
+                    <span class="card__text-area__subtittle">Javascript Html and Css</span>
                 </div>
+                <div class="card__btn button" (click)="clickBy()"><span>Learn More</span> </div>
+            </div>
+            <app-modal *ngIf="clicked" (close)="clickBy()"></app-modal>
+        </div>
     </div>
-   
+
 
 
 </section>

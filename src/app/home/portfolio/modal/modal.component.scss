@@ -1,7 +1,7 @@
 
 .carousel-inner{
     
-    height: 60vh;
+    height: 400px;
     background-color: black;
     
 }
@@ -21,7 +21,7 @@
     top: 5vh;
     left: 20vw;
     width: 60vw;
-    height: 80vh;
+    height: 600px;
     padding: 16px;
     z-index: 100;
     background: white;
@@ -33,7 +33,7 @@
 .box-actions{
     position: fixed;
     display: block;
-    bottom: 5vh;
+    
     left: 20vw;
     z-index: 105;
     width: 60vw;
@@ -46,6 +46,7 @@
     border: 2px solid white;
     background-color: #FF6530; 
     float: left;
+    color: white;
 }
 
 .button-close {

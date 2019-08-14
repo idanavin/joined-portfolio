@@ -14,7 +14,7 @@
 .about{    
     
     &__overlay {
-        background-image: linear-gradient(to left, #3498db 50%, #FF6530 50%);
+        background-image: linear-gradient(to left, rgba(52, 152, 219, 0.7) 50%, rgba(255, 100, 48, 0.7) 50%);
         padding-bottom: 200px;
     }
     &__card{

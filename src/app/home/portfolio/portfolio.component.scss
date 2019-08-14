@@ -10,57 +10,59 @@
 .card {
     width: 390px;
     height: 300px;
-    background: url("../../../assets/thumb-1.jpg") center center/cover;
     cursor: pointer;
     
-}
+    &--1 {
+        background: url("../../../assets/thumb-1.jpg") center center/cover;
+    }
+    &--2 {
+        background: url("../../../assets/thumb-1.jpg") center center/cover;
+    }
 
+    &:hover {
+        background: rgba(255, 255, 255, 0.753); 
+        background-size: cover;
 
+        .card {
+            &__text-area {
+                opacity: 1;
+                text-align: center;
+                animation: moveDown 1s ease-in-out;
+                animation-fill-mode: forwards;
+            }
 
+            &__btn {
+                opacity: 1;
+                animation: moveUp 1s ease-in-out;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
 
-.text {
-    opacity: 0;
-}
+    &__text-area {
+        opacity: 0;
+    }
 
-.button {
-    opacity: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    border: 2px solid #FF5524;
-    width: 170px;
-    margin: 0 auto;
-    font-size: 13pt;
-    padding: 7px 0;
-    text-align: center;
-    color: #FF5524;
-    
-   
-}
-
-.button:hover{
-    background-color: #FF5524 ;
-    color: white;
-   
-}
-
-.card:hover {
-     background: white; 
-     background-size: cover;
-
-    
-    .text{
-        opacity: 1;
+    &__btn {
+        opacity: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        border: 2px solid #FF5524;
+        width: 170px;
+        margin: 0 auto;
+        font-size: 13pt;
+        padding: 7px 0;
         text-align: center;
-        animation: moveDown 1s ease-in-out;
-        animation-fill-mode: forwards;
-    }
+        color: #FF5524;
 
-    .button {
-        opacity: 1;
-        animation: moveUp 1s ease-in-out;
-        animation-fill-mode: forwards;
+        &:hover {
+            background-color: #FF5524 ;
+            color: white;
+        }
     }
-
+    
 }
+
+
