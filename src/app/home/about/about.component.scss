@@ -1,44 +1,46 @@
 
 
-.container-fluid{
-    
-   padding-top: 200px;
-   
-}
-
-.row{
-    margin-bottom: 50px;
-}
 
 
 .about{    
-    
+    background-image: url("~/assets/about-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     &__overlay {
-        background-image: linear-gradient(to left, rgba(52, 152, 219, 0.7) 50%, rgba(255, 100, 48, 0.7) 50%);
-        padding-bottom: 200px;
+        background-image: linear-gradient(to bottom, rgba(111,144,161,0.7)   , rgba( 34,129,180,0.7) 60% ,rgba(  3, 36, 54,1)  );
+        
     }
     &__card{
-        width: 25rem;
+        width: 20rem;
         margin: auto;
-        background-color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 100px;
+        margin-top: 30px;
+        background-color: transparent;
+        border: 2px solid white;
+        
 
         &--1 {
-            border: 5px solid #3498db;
+            
         }
 
         &--2 {
-            border: 5px solid #FF6530;
+          
         }
 
         &__img{
-            margin-top: 30px;
+            
+            filter: grayscale(100%);
         }
         &__body{
-
+           background-color: transparent;
+            color: white;
         }
 
         &__title{
             margin-bottom: 40px;
+            color: #FFC425;
+            font-size: 40px;
         }
 
         &__text{
@@ -65,5 +67,6 @@
 
     h2 {
         margin: auto;
+        color: #FFC425;
     }
     

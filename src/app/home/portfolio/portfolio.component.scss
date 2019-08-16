@@ -20,13 +20,12 @@
     }
 
     &:hover {
-        background: rgba(255, 255, 255, 0.753); 
+        background: white; 
         background-size: cover;
 
         .card {
             &__text-area {
                 opacity: 1;
-                text-align: center;
                 animation: moveDown 1s ease-in-out;
                 animation-fill-mode: forwards;
             }
@@ -41,6 +40,7 @@
 
     &__text-area {
         opacity: 0;
+        text-align: center;
     }
 
     &__btn {

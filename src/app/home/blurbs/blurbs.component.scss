@@ -2,8 +2,8 @@
 
 .blurbs {
     
-    background-color: rgba(52, 152, 219, 0.8);
-    background-image: url("~/assets/customer-layout.jpg");
+   // background-color: rgba(52, 152, 219, 0.8);
+    background-image: url("~/assets/customer-layout-new.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
     &__overlay {
         display: inline-block;
         padding-top: 3%;
-        background-color: rgba(52, 152, 219, 0.5);
+        // background-color: rgba(52, 152, 219, 0.5);
         height: 750px;
         width: 100%;
     }
