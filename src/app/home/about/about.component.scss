@@ -1,7 +1,6 @@
 
 
 
-
 .about{    
     background-image: url("~/assets/about-background.jpg");
     background-size: cover;
@@ -35,17 +34,20 @@
         &__body{
            background-color: transparent;
             color: white;
+            padding: 0;
         }
 
         &__title{
             margin-bottom: 40px;
-            color: #FFC425;
+            color: #300c00;
             font-size: 40px;
+            background-color: rgba(256,256,256,0.7);
         }
 
         &__text{
             margin-bottom: 70px;
             padding-top: 20px;
+            padding: 1.2rem;
         }
 
     }
@@ -67,6 +69,6 @@
 
     h2 {
         margin: auto;
-        color: #FFC425;
+        
     }
     

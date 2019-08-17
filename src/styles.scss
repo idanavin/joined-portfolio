@@ -5,6 +5,9 @@
     margin: 0;
     
 }
+html {
+    background-color: #EAEAEA;
+}
 body {
     max-width: 1600px;
     margin: auto;
@@ -29,7 +32,9 @@ h1 ,h2, h3 ,h4, h5, h6, p  {
    
 
 }
-
+.dark-orange{
+    color: #300c00;
+}
 .orange {
     color: #FF6530;
 }

@@ -1,5 +1,5 @@
 .container-fluid {
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     margin-top: 130px;
 }
 .row{
@@ -29,7 +29,7 @@ h2 {
         background-size: contain;
         background-repeat: no-repeat;
         margin: 60px auto;
-        
+        filter: grayscale(1);
         &--1 {
             background-image: url("~/assets/html-logo-new.png");
         }
@@ -51,6 +51,10 @@ h2 {
         &--7 {
             background-image: url("~/assets/firebase-logo.png");
         }
+    }
+
+    &__icon:hover{
+        filter:none;
     }
 }
 

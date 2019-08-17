@@ -25,7 +25,7 @@ import {
   styleUrls: ['./blurbs.component.scss']
 })
 export class BlurbsComponent implements OnInit {
-  viewed = 'notViewed';
+  viewed = 'viewed'; //changed from not 'notViewed'
 
   @ViewChild('blurbs', { static: true }) blurbs: ElementRef;
 
