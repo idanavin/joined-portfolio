@@ -31,25 +31,9 @@ export class NavbarComponent implements OnInit {
     this.menuPosition = this.menuElement.nativeElement.offsetTop
   }
 
-  gotoHome() {
-    let el = this.menuElement.nativeElement.parentElement.parentElement.querySelector('.blurbs');
+  goTo(e) {
+    let el = this.menuElement.nativeElement.parentElement.parentElement.querySelector(`.${e}`);
     el.scrollIntoView();
   }
-
-  gotoAbout() {
-    let el = this.menuElement.nativeElement.parentElement.parentElement.querySelector('.about');
-    el.scrollIntoView();
-  }
-
-  gotoProjects() {
-    let el = this.menuElement.nativeElement.parentElement.parentElement.querySelector('.portfolio');
-    el.scrollIntoView();
-  }
-
-  gotoContact() {
-    let el = this.menuElement.nativeElement.parentElement.parentElement.querySelector('.contact');
-    el.scrollIntoView();
-  }
-
 
 }

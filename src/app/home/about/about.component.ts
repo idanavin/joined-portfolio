@@ -1,21 +1,11 @@
 import { Component, OnInit, ViewChild, HostListener, ElementRef } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+// import { viewAnimation } from '../../animations';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  animations: [
-    trigger('about', [
-      state('notViewed', style({
-        // height: 0,
-        opacity: 0
-      })),
-      state('viewed', style({
-        opacity: 1
-      })),
-      transition('notViewed => viewed', animate(2000))
-    ])
-  ],
+  animations: [],
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {

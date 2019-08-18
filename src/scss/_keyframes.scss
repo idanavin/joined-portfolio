@@ -32,3 +32,23 @@
     }
 }
 
+@keyframes changeColor {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #0F4263;
+    }
+}
+
+@keyframes moveDownNav {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
