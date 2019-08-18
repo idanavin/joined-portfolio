@@ -10,26 +10,27 @@
     display: block;
 }
 .sticky{
-    position: sticky;
+    position: fixed;
+    top: 0;
+    // background-color: white;
   
     overflow: hidden;
     z-index: 999;
+    // .nav__button {
+    // }
 }
 .nav {
     &__container {
-        
-        
-        
         width: 100%;
-       
     }
-
+    
     &__box {
-        width: 180px;
+        width: 14%;
         display: inline-block;
-        position: relative;
-        color: black;
-        
+        // position: relative;
+        color: #658ea9;
+        background-color: white;
+        margin-bottom: 2px;
 
         &:hover {
             cursor: pointer;
@@ -37,7 +38,6 @@
             margin: 0;
             animation: changeColor 0.4s ease-in-out;
             border-bottom: 2px solid #0F4263;
-            
         }
     }
   
@@ -45,9 +45,6 @@
         text-align: center;
         text-transform: uppercase;
         user-select: none;
-
-        
-    
     }
 }
 

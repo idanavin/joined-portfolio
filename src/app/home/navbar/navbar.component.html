@@ -1,16 +1,16 @@
 <nav class="nav__container container-fluid" #stickyMenu [class.sticky] = "sticky">
     <ul class="nav nav-pills nav-justified">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+        <li class="nav__box">
+          <a class="nav__button active" (click)="gotoHome()">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+        <li class="nav__box">
+          <a class="nav__button" (click)="gotoAbout()">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+        <li class="nav__box">
+          <a class="nav__button" (click)="gotoProjects()">Projects</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Contact</a>
+        <li class="nav__box">
+          <a class="nav__button" (click)="gotoContact()">Contact</a>
         </li>
       </ul>
 </nav>
@@ -26,7 +26,7 @@
           <p class="nav__button">About Me</p>
         </div>
         <div class="nav__box">
-          <p class="nav__button" (click)="onClick()">Portfolio</p>
+          <p class="nav__button" (click)="onClick(e)">Portfolio</p>
         </div>
         <div class="nav__box">
           <p class="nav__button" (click)="onClick()">Contact</p>
