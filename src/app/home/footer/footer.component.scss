@@ -1,6 +1,7 @@
 footer{
     background-color: #658ea9;
-
+    height: 100px;
+    display: flex;
 }
 
 .logo{
@@ -11,10 +12,16 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     margin:auto;
+    display: inline-flex;
 }
 
 .text {
    
-    margin:auto;
+    margin: auto 50px;
     color:  white;
+}
+
+.name{
+    font-family: "Gochi Hand", cursive;
+    font-size: 22px;
 }

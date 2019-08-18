@@ -5,8 +5,8 @@ import { viewAnimation } from '../../animations';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  animations: [viewAnimation],
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
+  animations: [viewAnimation]
 })
 export class AboutComponent implements OnInit {
 

@@ -1,9 +1,9 @@
 import { trigger, state, transition, style, animate } from '@angular/animations';
 
 
-export let viewAnimation = trigger('about', [
+export let viewAnimation = trigger('viewed', [
     state('notViewed', style({
-        height: 0,
+        // height: 0,
         opacity: 0
     })),
     state('viewed', style({

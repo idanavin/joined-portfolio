@@ -33,7 +33,7 @@ export class NavbarComponent implements OnInit {
 
   goTo(e) {
     let el = this.menuElement.nativeElement.parentElement.parentElement.querySelector(`.${e}`);
-    el.scrollIntoView();
+    el.scrollIntoView({behavior: "smooth"});
   }
 
 }
