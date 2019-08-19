@@ -1,0 +1,318 @@
+// START OF GRAPHS
+
+
+$color-1: #338CFB;
+$color-2: #FF6530;
+$color-3: #FF408E;
+
+
+.graph-card {
+    // background: #FCFBFB;
+    background: transparent;
+    width: 100%;
+    //min-width: 550px;
+    height: 455px;
+    //border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transform: translate3d(0, 0, 0);
+    &__lines {
+      height: 80%;
+      display: flex;
+      padding: 20px 10%;
+      justify-content: space-around;
+    }
+    &__line {
+      width: 14px;
+      transform: translate3d(0, 0, 0);
+      background: #D8D2D7;
+      position: relative;
+      //border-radius: 14px;
+      overflow: hidden;
+      &:before {
+        transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+                    background .1s linear;
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        //border-radius: 14px;
+        transform-origin: 50% 100%;
+        transform: translateY(0);
+        background: #f00;
+        border-right: 2px solid rgba(0, 0, 0, .3);
+      }
+    }
+    &__controls {
+      height: 20%;
+      background: transparent;
+      position: relative;
+      &-inner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      &:after {
+        transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+                    background .1s linear;
+        content: '';
+        width: 80px;
+        height: 40px;
+        background: #000;
+        // border-radius: 40px;
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+        left: 0;
+        z-index: 5;
+        border-right: 3px solid rgba(0, 0, 0, .1);
+      }
+    }
+    &__control {
+      //border-radius: 30px;
+      transition: all .2s ease-in-out;
+      transform: translate3d(0, 0, 0);
+      text-transform: uppercase;
+      font-size: 1rem;
+      line-height: 40px;
+      cursor: pointer;
+      width: 80px;
+      height: 40px;
+      z-index: 10;
+      text-align: center;
+      position: relative;
+      text-shadow: -1px -1px 0 rgba(0, 0, 0, 0);
+    }
+    &__trigger {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border: none;
+      background: none;
+      &_views {
+        &:checked {
+          & ~ .graph-card__lines {
+            .graph-card__line {
+              &:before {
+                background: $color-1;
+              }
+              &:nth-child(1) {
+                &:before {
+                  transform: translateY(-20%);
+                }
+              }
+              &:nth-child(2) {
+                &:before {
+                  transform: translateY(-40%);
+                }
+              }
+              &:nth-child(3) {
+                &:before {
+                  transform: translateY(-80%);
+                }
+              }
+              &:nth-child(4) {
+                &:before {
+                  transform: translateY(-40%);
+                }
+              }
+              &:nth-child(5) {
+                &:before {
+                  transform: translateY(-50%);
+                }
+              }
+              &:nth-child(6) {
+                &:before {
+                  transform: translateY(-10%);
+                }
+              }
+              &:nth-child(7) {
+                &:before {
+                  transform: translateY(-90%);
+                }
+              }
+              &:nth-child(8) {
+                &:before {
+                  transform: translateY(-30%);
+                }
+              }
+              &:nth-child(9) {
+                &:before {
+                  transform: translateY(-40%);
+                }
+              }
+              &:nth-child(10) {
+                &:before {
+                  transform: translateY(-90%);
+                }
+              }
+            }
+          }
+          & ~ .graph-card__controls {
+            &:after {
+                
+              transform: translateX(13px);
+              background: $color-1;
+            }
+            .graph-card__control_views {
+              color: #fff;
+              text-shadow: -1px -1px 1px rgba(0, 0, 0, .5);
+            }
+          }
+        }
+      }
+      &_sales {
+        &:checked {
+          & ~ .graph-card__lines {
+            .graph-card__line {
+              &:before {
+                background: $color-2;
+              }
+              &:nth-child(1) {
+                &:before {
+                  transform: translateY(-40%);
+                }
+              }
+              &:nth-child(2) {
+                &:before {
+                  transform: translateY(-60%);
+                }
+              }
+              &:nth-child(3) {
+                &:before {
+                  transform: translateY(-40%);
+                }
+              }
+              &:nth-child(4) {
+                &:before {
+                  transform: translateY(-50%);
+                }
+              }
+              &:nth-child(5) {
+                &:before {
+                  transform: translateY(-60%);
+                }
+              }
+              &:nth-child(6) {
+                &:before {
+                  transform: translateY(-20%);
+                }
+              }
+              &:nth-child(7) {
+                &:before {
+                  transform: translateY(-20%);
+                }
+              }
+              &:nth-child(8) {
+                &:before {
+                  transform: translateY(-50%);
+                }
+              }
+              &:nth-child(9) {
+                &:before {
+                  transform: translateY(-20%);
+                }
+              }
+              &:nth-child(10) {
+                &:before {
+                  transform: translateY(-30%);
+                }
+              }
+            }
+          }
+          & ~ .graph-card__controls {
+            &:after {
+              transform: translateX(120px);
+              background: $color-2;
+            }
+            .graph-card__control_sales {
+              color: #fff;
+              text-shadow: -1px -1px 1px rgba(0, 0, 0, .5);
+            }
+          }
+        }
+      }
+      &_likes {
+        &:checked {
+          & ~ .graph-card__lines {
+            .graph-card__line {
+              &:before {
+                background: $color-3;
+              }
+              &:nth-child(1) {
+                &:before {
+                  transform: translateY(-80%);
+                }
+              }
+              &:nth-child(2) {
+                &:before {
+                  transform: translateY(-10%);
+                }
+              }
+              &:nth-child(3) {
+                &:before {
+                  transform: translateY(-40%);
+                }
+              }
+              &:nth-child(4) {
+                &:before {
+                  transform: translateY(-80%);
+                }
+              }
+              &:nth-child(5) {
+                &:before {
+                  transform: translateY(-20%);
+                }
+              }
+              &:nth-child(6) {
+                &:before {
+                  transform: translateY(-60%);
+                }
+              }
+              &:nth-child(7) {
+                &:before {
+                  transform: translateY(-50%);
+                }
+              }
+              &:nth-child(8) {
+                &:before {
+                  transform: translateY(-40%);
+                }
+              }
+              &:nth-child(9) {
+                &:before {
+                  transform: translateY(-10%);
+                }
+              }
+              &:nth-child(10) {
+                &:before {
+                  transform: translateY(-20%);
+                }
+              }
+            }
+          }
+          & ~ .graph-card__controls {
+            &:after {
+              transform: translateX(225px);
+              background: $color-3;
+            }
+            .graph-card__control_likes {
+              color: #fff;
+              text-shadow: -1px -1px 1px rgba(0, 0, 0, .5);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+//END OF GRAPHS

@@ -14,6 +14,7 @@ import { ContactComponent } from './home/contact/contact.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { ModalComponent } from './home/portfolio/modal/modal.component';
 import { BlurbsComponent } from './home/blurbs/blurbs.component';
+import { GraphsComponent } from './home/about/graphs/graphs.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { BlurbsComponent } from './home/blurbs/blurbs.component';
     FooterComponent,
     ModalComponent,
     BlurbsComponent,
+    GraphsComponent,
   ],
   imports: [
     BrowserModule,
