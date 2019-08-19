@@ -3,6 +3,7 @@
     
     height: 400px;
     background-color: black;
+    display: inline-block;
     
 }
 
@@ -18,41 +19,58 @@
 
 .box {
     position: fixed;
-    top: 5vh;
-    left: 20vw;
+    display: block;
+    top: 10vh;
+    left: 33%;
     width: 60vw;
-    height: 600px;
-    padding: 16px;
+    max-width: 810px;
+   
+   
     z-index: 100;
     background: white;
     box-shadow: 0 2px 8px rbga(0,0,0,0.26);
 }
 
-
+.text{
+    height: 200px;
+}
 
 .box-actions{
     position: fixed;
     display: block;
-    
-    left: 20vw;
+    width: inherit;
+    max-width: 810px;
+    background-color:white;
     z-index: 105;
-    width: 60vw;
+    
 }
 
 .button-enter {
+    font-family: 'PT Serif', serif;
+    font-size: 20;
     padding: 12px 0;
     height: 70px;
-    width: 120px;
+    width: 180px;
+    border: 2px solid #FF6530;
+    background-color: white; 
+    color: #FF6530;
+    transition: 500ms;
+    display: block;
+    margin: 0 auto;
+}
+
+.button-enter:hover {
     border: 2px solid white;
     background-color: #FF6530; 
-    float: left;
-    color: white;
+    color:white;
 }
 
 .button-close {
+    font-size: 20;
+    font-family: 'PT Serif', serif;
     padding: 12px 0;
     height: 70px;
-    width: 120px;
+    width: 180px;
     border: 2px solid white;
     background-color: #EEEEEE; 
     float: right;
