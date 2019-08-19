@@ -1,8 +1,8 @@
 
 
 $color-1: #338CFB;
-$color-2: #FF408E;
-$color-3: #90E63E;
+$color-2: #FF6530;
+$color-3: #FF408E;
 
 
 .about{    
@@ -231,7 +231,8 @@ $color-3: #90E63E;
               }
               & ~ .graph-card__controls {
                 &:after {
-                  transform: translateX(52px);
+                    
+                  transform: translateX(13px);
                   background: $color-1;
                 }
                 .graph-card__control_views {
@@ -302,7 +303,7 @@ $color-3: #90E63E;
               }
               & ~ .graph-card__controls {
                 &:after {
-                  transform: translateX(235px);
+                  transform: translateX(120px);
                   background: $color-2;
                 }
                 .graph-card__control_sales {
@@ -373,7 +374,7 @@ $color-3: #90E63E;
               }
               & ~ .graph-card__controls {
                 &:after {
-                  transform: translateX(418px);
+                  transform: translateX(225px);
                   background: $color-3;
                 }
                 .graph-card__control_likes {
