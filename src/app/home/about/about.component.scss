@@ -79,9 +79,10 @@ $color-3: #90E63E;
 
     // START OF GRAPHS
     .graph-card {
-        background: #FCFBFB;
-        
-        min-width: 550px;
+        // background: #FCFBFB;
+        background: transparent;
+        width: 100%;
+        //min-width: 550px;
         height: 455px;
         border-radius: 10px;
         overflow: hidden;
