@@ -9,17 +9,21 @@ h4 {
 input {
     background-color: rgba(255, 255, 255, 0.6);
     font-size: 25px;
+    color: #300c00;
 }
 textarea{
     font-size: 25px;
     resize: none;
-    background-color: transparent;
+    background-color: white;
+    width: 300px;
 
 }
 label {
     font-size: 200%;
     display: block;
     text-align: left;
+    color: white;
+    padding-left: 52px;
 }
 .input-container{
     margin-bottom: 30px;
@@ -27,15 +31,15 @@ label {
 .contact {
    
   
-    color: white;
+    
     text-align: center;
     font-family: monospace;
     font-weight: 200;
     display: block;
-    height: 1000px;
+    height: 1100px;
     // margin-top: -700px;
     width: 100%;
-    color: black;
+    background-image: linear-gradient(to  bottom , rgba( 256,256,256,1), rgba(52, 153, 219,0.8)       );
    
     &__canvas {
         pointer-events: none;
@@ -54,18 +58,20 @@ label {
     
     margin:auto;
     display: table;
-    border: 1px solid #3499DB;
-  
-    background-color: rgba(255, 255, 255, 0.8);
+    // border: 1px solid #3499DB;
+    width: 450px;
+    // background-color: rgba(255, 255, 255, 0.8);
+    background-image: linear-gradient(to bottom right, rgba(52, 153, 219,1)   , rgba( 34,129,180,1)  ,rgba(  3, 36, 54,1)  );
     height: 600px;
    
     font-family: "PT Serif", serif;
     font-size: 15px;
-
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0,0.75);
+    margin-top: 130px;
 }
 
 .card-header{
-    background-color: #3499DB;
+    background-color: transparent;
     color: white;
     font-size: 30px;
 }
@@ -82,20 +88,25 @@ label {
     padding: 12px 0;
     height: 70px;
     width: 300px;
-    border: 2px solid #FF6530;
+    //border: 2px solid #FF6530;
+    border:none;
     background-color: white;  
     margin:  auto;
     margin-top: 50px;
     cursor: pointer;
-    color: #FF6530;
-    font-size: 34px;
+    color: #300c00;
+    font-size: 32px;
     margin:auto;
     transition: 500ms;
+    box-shadow: none;
+    background-image: linear-gradient(to  bottom right, rgba(52, 153, 219,0.9)   , rgba( 256,256,256,1)   );
+    letter-spacing: 3px;
 }
 
 .submit-button:hover {
-    color: white;
-    background-color: #FF6530; 
+    // color: white;
+    background-image:none;
+    background-color: #3499DB; 
 }
 
 .orange{
@@ -103,13 +114,14 @@ label {
 }
 
 input {
-    width: 400px;
+    width: 300px;
     height: 50px;
     outline: 0;
-    box-shadow: none;
+    // box-shadow: none;
     border: none;
     border-bottom: 1px solid #ced4da;
-    background-color: transparent;
+    // background-color: transparent;
+    background-color: white;
 }
 
 input:focus{

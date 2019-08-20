@@ -1,6 +1,6 @@
 <section class="portfolio" #portfolio [@viewed]="viewed">
     <div class="row">
-        <h2 class="dark-orange display-3">Our Latest Projects</h2>
+        <h2 class="dark-orange display-2">Our Latest Projects</h2>
     </div>
 
 
@@ -25,7 +25,7 @@
             </div>
             <app-modal *ngIf="clicked" (close)="clickBy()"></app-modal>
         <!-- </div> -->
-           <!-- <div class="col-sm-6 col-md-6"> -->
+           <!-- <div class="col-sm-6 col-md-6"> 
             <div class="card card--2">
                 <div class="card__text-area text">
                     <h3 class="card__text-area__tittle">{{project1.name}}</h3>
@@ -34,6 +34,8 @@
                 <div class="card__btn button" (click)="clickBy()"><span>Learn More</span> </div>
             </div>
             <app-modal *ngIf="clicked" (close)="clickBy()" [project]="project1"></app-modal>
+
+            -->
         <!-- </div> -->
     </div>
 
