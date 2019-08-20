@@ -8,16 +8,18 @@ import { viewAnimation } from '../../animations';
   animations: [viewAnimation]
 })
 export class PortfolioComponent implements OnInit {
+
+  
   clicked = false;
 
   viewed = 'notViewed';
 
-  @ViewChild('portfolio', { static: true }) about: ElementRef;
+  @ViewChild('portfolio', { static: true }) el: ElementRef;
 
   @HostListener('window:scroll')
   checkScroll() {
     const scrollPosition = window.pageYOffset + window.innerHeight;
-    if (this.about && this.about.nativeElement.offsetTop <= scrollPosition) {
+    if (this.el && this.el.nativeElement.offsetTop <= scrollPosition) {
       this.viewed = 'viewed';
     }
   }
@@ -25,6 +27,7 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit() {
   }
+
 
 
   clickBy(){

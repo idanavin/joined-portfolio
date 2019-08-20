@@ -23,7 +23,7 @@ $color-3: #FF408E;
       justify-content: space-around;
     }
     &__line {
-      width: 14px;
+      width: 10px;
       transform: translate3d(0, 0, 0);
       background: #D8D2D7;
       position: relative;
@@ -159,7 +159,7 @@ $color-3: #FF408E;
           & ~ .graph-card__controls {
             &:after {
                 
-              transform: translateX(15px);
+              transform: translateX(25px);
               background: $color-1;
             }
             .graph-card__control_views {
@@ -230,7 +230,7 @@ $color-3: #FF408E;
           }
           & ~ .graph-card__controls {
             &:after {
-              transform: translateX(120px);
+              transform: translateX(157px);
               background: $color-2;
             }
             .graph-card__control_sales {
@@ -301,7 +301,7 @@ $color-3: #FF408E;
           }
           & ~ .graph-card__controls {
             &:after {
-              transform: translateX(225px);
+              transform: translateX(290px);
               background: $color-3;
             }
             .graph-card__control_likes {
