@@ -5,17 +5,17 @@
     <input class="graph-card__trigger graph-card__trigger_sales" type="radio" name="trigger" checked="checked" [attr.id]="gId + '-sales'" />
     <input class="graph-card__trigger graph-card__trigger_likes" type="radio" name="trigger" [attr.id]="gId + '-likes'" />
     
+    <div class="graph-card__text-area">
+        <div class="graph-card__text" *ngFor="let data of dataset">{{ data }}</div>
+    </div>
     <div class="graph-card__lines">
-        <div class="graph-card__line"></div>
-        <div class="graph-card__line"></div>
-        <div class="graph-card__line"></div>
-        <div class="graph-card__line"></div>
+        <div class="graph-card__line" *ngFor="let data of dataset"></div>
     </div>
     <div class="graph-card__controls">
         <div class="graph-card__controls-inner">
-            <label class="graph-card__control card__control_views" for="{{gId}}-views">Design</label>
-            <label class="graph-card__control card__control_sales" for="{{gId}}-sales">Coding</label>
-            <label class="graph-card__control card__control_likes" for="{{gId}}-likes">Human</label>
+            <label class="graph-card__control card__control_views" for="{{gId}}-views" (click)="onClick('design')">Design</label>
+            <label class="graph-card__control card__control_sales" for="{{gId}}-sales" (click)="onClick('code')">Coding</label>
+            <label class="graph-card__control card__control_likes" for="{{gId}}-likes" (click)="onClick('human')">Human</label>
         </div>
     </div>
 </div>
