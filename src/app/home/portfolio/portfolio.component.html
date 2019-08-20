@@ -29,11 +29,11 @@
             <div class="card card--2">
                 <div class="card__text-area text">
                     <h3 class="card__text-area__tittle">{{project1.name}}</h3>
-                    <span class="card__text-area__subtittle">Javascript Html and Css</span>
+                    <span class="card__text-area__subtittle">{{project1.tech}}</span>
                 </div>
                 <div class="card__btn button" (click)="clickBy()"><span>Learn More</span> </div>
             </div>
-            <app-modal *ngIf="clicked" (close)="clickBy()"></app-modal>
+            <app-modal *ngIf="clicked" (close)="clickBy()" [project]="project1"></app-modal>
         <!-- </div> -->
     </div>
 

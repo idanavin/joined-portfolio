@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef, ViewChild, Output } from '@angular/core';
 import { viewAnimation } from '../../animations';
 import { Project } from './project/project.module';
 
@@ -10,10 +10,9 @@ import { Project } from './project/project.module';
 })
 export class PortfolioComponent implements OnInit {
 
-  
+  @Output() project1: Project;
   clicked = false;
   viewed = 'notViewed';
-  project1 = new Project('Art Of Idan', 'Angular html5 scss', 'This is a comic books artist','../../../assets/artofidanPreview.jpg', ['pita','humus'], 'www.artofidan.com');
   @ViewChild('portfolio', { static: true }) el: ElementRef;
 
   @HostListener('window:scroll')
@@ -26,6 +25,8 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.project1 = new Project('Art Of Idan', 'Angular html5 scss', 'This is a comic books artist','../../../assets/artofidanPreview.jpg', ['pita','humus'], 'www.artofidan.com');
+    console.log(this.project1.description);
   }
 
 
