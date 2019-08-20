@@ -1,9 +1,9 @@
  <!-- START OF GRAPHS-->
 
  <div *ngIf="gId" class="graph-card">
-    <input class="graph-card__trigger graph-card__trigger_views" type="radio" name="trigger" [attr.id]="gId + '-views'" />
-    <input class="graph-card__trigger graph-card__trigger_sales" type="radio" name="trigger" checked="checked" [attr.id]="gId + '-sales'" />
-    <input class="graph-card__trigger graph-card__trigger_likes" type="radio" name="trigger" [attr.id]="gId + '-likes'" />
+    <input class="graph-card__trigger graph-card__trigger_views" type="radio" [attr.name]="'trigger' + gId" [attr.id]="gId + '-views'" />
+    <input class="graph-card__trigger graph-card__trigger_sales" type="radio" [attr.name]="'trigger' + gId" checked="checked" [attr.id]="gId + '-sales'" />
+    <input class="graph-card__trigger graph-card__trigger_likes" type="radio" [attr.name]="'trigger' + gId" [attr.id]="gId + '-likes'" />
     
     <div class="graph-card__text-area">
         <div class="graph-card__text" *ngFor="let data of dataset">{{ data }}</div>
