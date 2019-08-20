@@ -27,19 +27,22 @@ $color-3: #FF408E;
       justify-content: space-evenly;
     }
     &__text {
-      
+      font-size: 1.2rem;
+      font-weight: 300;
     }
     &__line {
-      width: 10px;
-      transform: translate3d(0, 0, 0);
+      width: 13px;
+      // transform: translate3d(0, 0, 0);
+      
       background: #D8D2D7;
       position: relative;
       //border-radius: 14px;
       overflow: hidden;
-      &:before {
-        transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
-                    background .1s linear;
-        content: '';
+      &-inner {
+        
+        // transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+        //             background .1s linear;
+        // content: '';
         position: absolute;
         top: 100%;
         left: 0;
@@ -47,7 +50,8 @@ $color-3: #FF408E;
         height: 100%;
         //border-radius: 14px;
         transform-origin: 50% 100%;
-        transform: translateY(0);
+        transform: translateY(-100%);
+        transition: all .2s ease-in-out;
         background: #f00;
         border-right: 2px solid rgba(0, 0, 0, .3);
       }
@@ -106,60 +110,13 @@ $color-3: #FF408E;
       background: none;
       &_views {
         &:checked {
+          .graph-card__text {
+            color: $color-1;
+          }
           & ~ .graph-card__lines {
             .graph-card__line {
-              &:before {
+              &-inner {
                 background: $color-1;
-              }
-              &:nth-child(1) {
-                &:before {
-                  transform: translateY(-20%);
-                }
-              }
-              &:nth-child(2) {
-                &:before {
-                  transform: translateY(-40%);
-                }
-              }
-              &:nth-child(3) {
-                &:before {
-                  transform: translateY(-80%);
-                }
-              }
-              &:nth-child(4) {
-                &:before {
-                  transform: translateY(-40%);
-                }
-              }
-              &:nth-child(5) {
-                &:before {
-                  transform: translateY(-50%);
-                }
-              }
-              &:nth-child(6) {
-                &:before {
-                  transform: translateY(-10%);
-                }
-              }
-              &:nth-child(7) {
-                &:before {
-                  transform: translateY(-90%);
-                }
-              }
-              &:nth-child(8) {
-                &:before {
-                  transform: translateY(-30%);
-                }
-              }
-              &:nth-child(9) {
-                &:before {
-                  transform: translateY(-40%);
-                }
-              }
-              &:nth-child(10) {
-                &:before {
-                  transform: translateY(-90%);
-                }
               }
             }
           }
@@ -178,60 +135,13 @@ $color-3: #FF408E;
       }
       &_sales {
         &:checked {
+          .graph-card__text {
+            color: $color-2;
+          }
           & ~ .graph-card__lines {
             .graph-card__line {
-              &:before {
+              &-inner {
                 background: $color-2;
-              }
-              &:nth-child(1) {
-                &:before {
-                  transform: translateY(-40%);
-                }
-              }
-              &:nth-child(2) {
-                &:before {
-                  transform: translateY(-60%);
-                }
-              }
-              &:nth-child(3) {
-                &:before {
-                  transform: translateY(-40%);
-                }
-              }
-              &:nth-child(4) {
-                &:before {
-                  transform: translateY(-50%);
-                }
-              }
-              &:nth-child(5) {
-                &:before {
-                  transform: translateY(-60%);
-                }
-              }
-              &:nth-child(6) {
-                &:before {
-                  transform: translateY(-20%);
-                }
-              }
-              &:nth-child(7) {
-                &:before {
-                  transform: translateY(-20%);
-                }
-              }
-              &:nth-child(8) {
-                &:before {
-                  transform: translateY(-50%);
-                }
-              }
-              &:nth-child(9) {
-                &:before {
-                  transform: translateY(-20%);
-                }
-              }
-              &:nth-child(10) {
-                &:before {
-                  transform: translateY(-30%);
-                }
               }
             }
           }
@@ -249,60 +159,13 @@ $color-3: #FF408E;
       }
       &_likes {
         &:checked {
+          .graph-card__text {
+            color: $color-3;
+          }
           & ~ .graph-card__lines {
             .graph-card__line {
-              &:before {
+              &-inner {
                 background: $color-3;
-              }
-              &:nth-child(1) {
-                &:before {
-                  transform: translateY(-80%);
-                }
-              }
-              &:nth-child(2) {
-                &:before {
-                  transform: translateY(-10%);
-                }
-              }
-              &:nth-child(3) {
-                &:before {
-                  transform: translateY(-40%);
-                }
-              }
-              &:nth-child(4) {
-                &:before {
-                  transform: translateY(-80%);
-                }
-              }
-              &:nth-child(5) {
-                &:before {
-                  transform: translateY(-20%);
-                }
-              }
-              &:nth-child(6) {
-                &:before {
-                  transform: translateY(-60%);
-                }
-              }
-              &:nth-child(7) {
-                &:before {
-                  transform: translateY(-50%);
-                }
-              }
-              &:nth-child(8) {
-                &:before {
-                  transform: translateY(-40%);
-                }
-              }
-              &:nth-child(9) {
-                &:before {
-                  transform: translateY(-10%);
-                }
-              }
-              &:nth-child(10) {
-                &:before {
-                  transform: translateY(-20%);
-                }
               }
             }
           }
