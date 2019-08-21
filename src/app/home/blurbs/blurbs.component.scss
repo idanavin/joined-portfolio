@@ -37,6 +37,7 @@
                 animation-fill-mode: forwards;
             }
             &__description {
+                text-align: left;
                 display: block;
                 animation: moveUp 1s ease-in-out;
                 animation-fill-mode: forwards;
@@ -63,9 +64,10 @@
     &__description {
         display: none;
         margin: auto;
-        font-size: 1rem;
+        font-size: 1.12rem;
         width: 90%;
         height: 200px;
+        line-height: 1.5;
 
     }
 }
