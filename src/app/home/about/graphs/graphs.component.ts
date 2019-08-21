@@ -36,8 +36,7 @@ export class GraphsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.dataset = this.us[this.gId].code;
-    this.datasetValue = this.us[this.gId].codeValue;
+    this.onClick('code');
     // console.log(this.us[this.gId].code)
   }
   

@@ -4,30 +4,27 @@
 
 .header {
     height: 70vh;
+    min-height: 750px;
     position: relative;
     font-family: 'PT Serif', serif;
     font-size: 70px;
-    text-align: center;
+    text-align: left;
    
     &__tittle {
         position: absolute;
         top: 2%;
         left: 3%;
-        font-size: 70px;
     }
 
     &__subtittle {
         position: absolute;
-        width: 20vw;
-        right: 4%;
-        bottom: 5%;
-        // color: white;
-
+        right: 3%;
+        bottom: 2%;
     }
     &__logo{
         position: absolute;
-        top: 5%;
-        right: 5%;
+        top: 2%;
+        right: 3%;
         
         height: 120px;
         width: 120px;
@@ -50,7 +47,7 @@
     &__button {
         position: absolute;
         bottom: 10%;
-        left: 25%;
+        left: 3%;
 
         border: 2px solid #FF6530;
         height: 60px;
@@ -100,13 +97,13 @@
     color: #FF6530;
     font-family: 'PT Serif', serif;
     display: block;
-    text-align: center;
+    // text-align: center;
 }
 .blue {
     color: #3498db;
     font-family: 'PT Serif', serif;
    display: block;
-   text-align: center;
+//    text-align: center;
     
 }
 
