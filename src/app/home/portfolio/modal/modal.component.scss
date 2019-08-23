@@ -14,49 +14,48 @@
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,0.5);
-    z-index: 50;
+
 }
 
 .box {
     position: fixed;
     display: block;
-    top: 10vh;
-    left: 33%;
-    width: 60vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
     max-width: 810px;
-   
-   
-    z-index: 100;
+
     background: white;
     box-shadow: 0 2px 8px rbga(0,0,0,0.26);
+
+    &__tittle {
+        text-align: center;
+        font-size: 1.6rem;
+        border-bottom: 2px solid #FF6530;
+        margin: 15px 0;
+        padding-bottom: 20px;
+    }
 }
 
 .text{
     height: 200px;
 }
 
-.box-actions{
-    position: fixed;
-    display: block;
-    width: inherit;
-    max-width: 810px;
-    background-color:white;
-    z-index: 105;
-    
-}
+
 
 .button-enter {
     font-family: 'PT Serif', serif;
-    font-size: 20;
-    padding: 12px 0;
-    height: 70px;
+    font-size: 1.4rem;
+    // padding: 12px 0;
+    height: 45px;
     width: 180px;
-    border: 2px solid #FF6530;
+    // border: 2px solid #FF6530;
     background-color: white; 
     color: #FF6530;
-    transition: 500ms;
+    transition: 0.3s;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 .button-enter:hover {

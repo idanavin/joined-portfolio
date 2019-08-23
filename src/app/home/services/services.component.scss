@@ -14,7 +14,8 @@
     width: 80%;
     // min-width: 235px;
     margin:auto;
-    background-color: rgba(125, 169, 199, 0.4);
+    padding: 10px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
 
     &__tittle {
         text-align: center;

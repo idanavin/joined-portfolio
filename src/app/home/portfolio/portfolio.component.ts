@@ -9,9 +9,21 @@ import { Project } from './project/project.module';
   animations: [viewAnimation]
 })
 export class PortfolioComponent implements OnInit {
-
-  project1 = new Project('Art Of Idan', 'Angular html5 scss', 'This is a comic books artist','../../../assets/artofidanPreview.jpg', ['pita','humus'], 'www.artofidan.com');
-  project2 = new Project('Art Of NOONE HEHE', 'Angular html5 scss', 'This is a comic books artist','../../../assets/artofidanPreview.jpg', ['pita','humus'], 'www.artofidan.com');  clicked = false;
+  project: string;
+  project1 = new Project(
+    'Art Of Idan',
+    'Angular HTML5 SASS',
+    'Made for a comic books artist to display his skill set',
+    '../../../assets/artofidanPreview.jpg',
+    ['../../../assets/artofidan-1.jpg','../../../assets/artofidan-2.jpg', '../../../assets/artofidan-3.jpg'],
+    'www.artofidan.com');
+  project2 = new Project(
+    'Dharma-Photography',
+    'HTML5 SASS Javascript',
+    'Made for photography buissness, Responsive UI, Auth and admin control over requested elements.',
+    '../../../assets/artofidanPreview.jpg',
+    ['...','...'],
+    'www.artofidan.com');  clicked = false;
   viewed = 'notViewed';
   @ViewChild('portfolio', { static: true }) el: ElementRef;
 
@@ -25,16 +37,11 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // this.project1 = new Project('Art Of Idan', 'Angular html5 scss', 'This is a comic books artist','../../../assets/artofidanPreview.jpg', ['pita','humus'], 'www.artofidan.com');
-    // console.log(this.project1.description);
+
   }
 
-
-
-  clickBy(){
+  clickBy(project){
     this.clicked = !this.clicked;
+    this.project = project;
   }
-
-  
-
 }
