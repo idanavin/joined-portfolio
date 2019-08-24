@@ -53,6 +53,8 @@
         height: 60px;
         width: 180px;
 
+      
+
         &__text{
             display: inline-block;
             transform: translateY(-75%);
@@ -178,11 +180,11 @@
     
         &__button {
             bottom: 10%;
-            left: 30%;
+            left: 60%;
             height: 40px;
             width: 160px;
             overflow: hidden;
-    
+            bottom: 6.5%;
             &__text{
                 transform: translateY(-93%);
             }
