@@ -52,7 +52,7 @@
         border: 2px solid #FF6530;
         height: 60px;
         width: 180px;
-
+        cursor: pointer;
       
 
         &__text{
@@ -75,6 +75,7 @@
 
     &__hireButton{
         position: absolute;
+        cursor: pointer;
         bottom: 5%;
         left: 3%;
         background-color: #FF6530;
