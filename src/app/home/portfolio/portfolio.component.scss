@@ -1,3 +1,9 @@
+@import "~src/scss/mixin";
+
+
+
+
+  
 
 .portfolio{
     display: flex;
@@ -10,6 +16,14 @@
 .card {
     width: 500px;
     height: 350px;
+    @include for-phone-only {  
+        
+        width: 350px;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 70px;
+
+      }
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
@@ -67,5 +81,7 @@
     }
     
 }
+
+
 
 

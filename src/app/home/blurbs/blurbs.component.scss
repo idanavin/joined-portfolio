@@ -12,7 +12,7 @@
         display: inline-block;
         padding-top: 3%;
         // background-color: rgba(52, 152, 219, 0.5);
-        height: 750px;
+        height: 100%;
         width: 100%;
     }
 }
@@ -80,4 +80,56 @@
     &__margin-right {
         margin-right: 25%;
     }
+}
+
+@media (max-width: 575.98px) { 
+    .blurbs {
+        height: 100%;
+        background-image: none;
+        display: block;
+         &__overlay {
+            background-color: rgba(52, 152, 219, 1);
+         }
+     }
+     
+     .blurb {
+      
+         
+         &:hover {
+             .blurb {
+     
+                 &__tittle {
+                 }
+                 &__icon {
+                 
+                 }
+                 &__description {
+                  
+                 }
+             }
+         }
+     
+         &__tittle {
+     
+         }
+     
+         &__icon {
+          
+         }
+     
+         &__description {
+       
+     
+         }
+     }
+     
+     .util {
+     
+         &__margin-left {
+           
+         }
+         &__margin-right {
+           
+         }
+     }
 }

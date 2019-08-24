@@ -1,5 +1,5 @@
 @import "~src/scss/keyframes";
-
+@import "~src/scss/mixin";
 
 .buttons-container{
     display: block;
@@ -61,4 +61,48 @@
 
 a.nav-link {
     
+}
+
+@include for-phone-only {  
+    .buttons-container{
+       
+    }
+    .sticky{
+      
+    }
+    .nav {
+        
+        &__container {
+       
+        }
+        
+        &__box {
+      
+    
+            &:hover {
+         
+            }
+        }
+      
+        &__button {
+            
+        }
+    }
+    
+    
+    
+    .nav-pills .nav-link {
+        font-size: 12px;
+        
+    }
+    
+    .nav-link.active {
+      
+    }
+    
+    
+    
+    a.nav-link {
+        
+    }
 }

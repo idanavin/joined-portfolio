@@ -1,0 +1,14 @@
+@import "variables";
+
+@mixin for-phone-only {
+    @media (max-width: $breakpoint-phone) { @content; }
+}
+
+
+@mixin for-desktop-up {
+    @media (min-width: $breakpoint-widescreen) { @content; }
+   
+}
+
+
+

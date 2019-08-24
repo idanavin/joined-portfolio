@@ -1,3 +1,5 @@
+@import "~src/scss/mixin";
+
 .container-fluid {
     margin-bottom: 150px;
     margin-top: 130px;
@@ -19,6 +21,7 @@
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
 
     &__tittle {
+
         text-align: center;
         font-size: 1.8rem;
         //text-decoration: underline; 
@@ -82,5 +85,55 @@
     &__border-bottom{
         border-left: 2px solid #7DAAC7;
         height: 150px;
+    }
+}
+
+@include for-phone-only {  
+    .col-sm{
+        margin-bottom: 100px;
+    }
+    .container-fluid {
+     
+    }
+    
+    .services {
+        &__tittle {
+        
+        }
+    }
+    
+    .service{
+     
+        
+        &__tittle {
+       
+        }
+        
+        &__description {
+     
+        }
+        
+        &__icon {
+            filter:none;
+         
+        }
+    
+       
+    }
+    .sepeator {
+        display:none;
+    }
+    .util {
+        &__margin-bottom {
+           
+        }
+    
+        &__border-top{
+    
+        }
+    
+        &__border-bottom{
+
+        }
     }
 }

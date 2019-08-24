@@ -1,5 +1,5 @@
 // START OF GRAPHS
-
+@import "~src/scss/mixin";
 
 $color-1: #338CFB;
 $color-2: #FF6530;
@@ -7,6 +7,7 @@ $color-3: #FF408E;
 
 .graph-card {
     // background: #FCFBFB;
+    
     background: transparent;
     width: 100%;
     //min-width: 550px;
@@ -51,6 +52,7 @@ $color-3: #FF408E;
         //border-radius: 14px;
         transform-origin: 50% 100%;
         transform: translateY(-100%);
+        
         transition: all .2s ease-in-out;
         background: #f00;
         border-right: 2px solid rgba(0, 0, 0, .3);
@@ -124,6 +126,10 @@ $color-3: #FF408E;
             &:after {
                 
               transform: translateX(25px);
+              @include for-phone-only { 
+                transform: translateX(10px);
+                
+              }
               background: $color-1;
             }
             .graph-card__control_views {
@@ -148,6 +154,10 @@ $color-3: #FF408E;
           & ~ .graph-card__controls {
             &:after {
               transform: translateX(157px);
+              @include for-phone-only { 
+               
+                transform: translateX(108px);
+              }
               background: $color-2;
             }
             .graph-card__control_sales {
@@ -172,6 +182,10 @@ $color-3: #FF408E;
           & ~ .graph-card__controls {
             &:after {
               transform: translateX(290px);
+              @include for-phone-only { 
+                
+                transform: translateX(207px);
+              }
               background: $color-3;
             }
             .graph-card__control_likes {
