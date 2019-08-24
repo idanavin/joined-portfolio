@@ -1,7 +1,7 @@
 
 .carousel-inner{
     
-    height: 400px;
+    height: 320px;
     background-color: black;
     display: inline-block;
     
@@ -26,40 +26,40 @@
     width: 75%;
     max-width: 810px;
 
-    background: white;
+    background-image: linear-gradient(to bottom, #d4f3ff, #e8dbff);
     box-shadow: 0 2px 8px rbga(0,0,0,0.26);
 
     &__tittle {
         text-align: center;
         font-size: 1.6rem;
-        border-bottom: 2px solid #FF6530;
+        border-bottom: 2px solid rgba(255, 100, 48, 0.658);
         margin: 15px 0;
         padding-bottom: 20px;
     }
-}
-
-.text{
-    height: 200px;
+    &__content {
+        height: 200px;
+        padding-left: 25px;
+    }
 }
 
 
 
 .button-enter {
     font-family: 'PT Serif', serif;
-    font-size: 1.4rem;
-    // padding: 12px 0;
+    font-size: 1.3rem;
     height: 45px;
-    width: 180px;
-    // border: 2px solid #FF6530;
-    background-color: white; 
-    color: #FF6530;
+    width: 240px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right bottom, #ff64306e, #fffc3083);
+    box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
     transition: 0.3s;
     display: block;
     margin: 0 auto 20px auto;
 }
 
 .button-enter:hover {
-    border: 2px solid white;
+    // border: 2px solid white;
     background-color: #FF6530; 
     color:white;
 }
@@ -70,7 +70,7 @@
     padding: 12px 0;
     height: 70px;
     width: 180px;
-    border: 2px solid white;
+    // border: 2px solid white;
     background-color: #EEEEEE; 
     float: right;
 }
