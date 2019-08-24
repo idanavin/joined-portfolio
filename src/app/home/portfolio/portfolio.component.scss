@@ -1,11 +1,8 @@
 @import "~src/scss/mixin";
 
-
-
-
-  h2 {
-      margin-bottom: 70px;
-  }
+h2 {
+    margin: 70px auto;
+}
 
 .portfolio{
     display: flex;
@@ -18,20 +15,10 @@
 .card {
     width: 500px;
     height: 350px;
-    margin-left: 30px;
-    margin-right: 30px;
-    @include for-phone-only {  
-        
-        width: 350px;
-        height: 200px;
-        margin: auto;
-        margin-bottom: 70px;
-
-      }
+    margin: auto;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
-
     
     &--1 {
         background: url("../../../assets/dharmaPreview.jpg") center center/cover no-repeat;
@@ -84,6 +71,28 @@
         }
     }
     
+    @include for-phone-only {  
+        width: 350px;
+        height: 200px;
+        margin-bottom: 70px;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0); 
+            .card__text-area {
+                animation: none;
+            }
+            .card__btn {
+                animation: none;
+            }
+        }
+        &__text-area {
+            opacity: 1;
+        }
+        &__btn {
+            opacity: 1;
+        }
+        
+    }
 }
 
 

@@ -18,24 +18,26 @@
 
 .service{
     width: 80%;
-    height: 100%;
+    height: 110%;
     // min-width: 235px;
     margin: auto;
     padding: 10px;
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
-
+    background-color: #7DAAC7;
     &__tittle {
-
+        color: white;
         text-align: center;
         font-size: 1.8rem;
+        padding-top: 20px;
         //text-decoration: underline; 
         padding-bottom: 35px;
-        border-bottom: 2px solid #7DAAC7;
+          border-bottom: 2px solid white;
     }
     
     &__description {
-        font-size: 1.2rem;
-        
+        font-size: 1.3rem;
+        color: white;
+        font-weight: 600;
         @include for-phone-only {
             height: 10%;
         }
@@ -50,7 +52,7 @@
         margin: 60px auto;
         filter: grayscale(1);
         &--1 {
-            background-image: url("~/assets/html-logo-new.png");
+            background-image: url("~/assets/html-service.png");
         }
         &--2 {
             background-image: url("~/assets/css3-logo-new.png");
@@ -59,16 +61,16 @@
             background-image: url("~/assets/js-logo-new.png");
         }
         &--4 {
-            background-image: url("~/assets/wordpress.png");
+            background-image: url("~/assets/wordpress-service.png");
         }
         &--5 {
-            background-image: url("~/assets/angular.png");
+            background-image: url("~/assets/angular-service.png");
         }
         &--6 {
-            background-image: url("~/assets/nodejs.png");
+            background-image: url("~/assets/nodejs-service.png");
         }
         &--7 {
-            background-image: url("~/assets/firebase-logo.png");
+            background-image: url("~/assets/firebase-service.png");
         }
     }
 
@@ -76,7 +78,9 @@
         filter:none;
     }
 }
-
+.sepeator{
+    padding-top: 100px;
+}
 .util {
     &__margin-bottom {
         margin-bottom: 30px;
@@ -86,12 +90,14 @@
         border-left: 2px solid #7DAAC7;
         height: 150px;
         margin-bottom: 150px;
+        
       
     }
 
     &__border-bottom{
         border-left: 2px solid #7DAAC7;
         height: 150px;
+        
     }
 }
 
