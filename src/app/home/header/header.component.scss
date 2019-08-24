@@ -4,17 +4,19 @@
     height: 70vh;
     min-height: 750px;
     position: relative;
-    font-family: 'PT Serif', serif;
+    // font-family: 'PT Serif', serif;
     font-size: 70px;
     text-align: left;
    
     &__tittle {
+        font-family: 'PT Serif', serif;
         position: absolute;
         top: 2%;
         left: 3%;
     }
 
     &__subtittle {
+        font-family: 'PT Serif', serif;
         position: absolute;
         right: 3%;
         bottom: 2%;
@@ -44,9 +46,9 @@
 
     &__button {
         position: absolute;
+        
         bottom: 5%;
-        left: 3%;
-
+        left: 25%;
         border: 2px solid #FF6530;
         height: 60px;
         width: 180px;
@@ -68,6 +70,36 @@
             fill: #FF6530;
         }
     }  
+
+    &__hireButton{
+        position: absolute;
+        bottom: 5%;
+        left: 3%;
+        background-color: #FF6530;
+        border: 2px solid #FF6530;
+        height: 60px;
+        width: 210px;
+
+
+        &__text{
+            display: inline-block;
+            transform: translateY(-75%);
+            padding: 12px 0px 12px 10px;
+            color: white;
+            font-size: 24px;
+            
+        }
+
+        &__svg{
+            display: inline-block;
+            transform: translate(50%, -100%);
+            transition: all 0.5s ease;
+            height: 30px;
+            width: 30px;
+            fill: #FF6530;
+        }
+        
+    }
 }
 
 
@@ -91,13 +123,13 @@
 
 .orange {
     color: #FF6530;
-    font-family: 'PT Serif', serif;
+    //font-family: 'PT Serif', serif;
     display: block;
     // text-align: center;
 }
 .blue {
     color: #3498db;
-    font-family: 'PT Serif', serif;
+    //font-family: 'PT Serif', serif;
    display: block;
 //    text-align: center;
     
@@ -114,13 +146,13 @@
 @include for-phone-only { 
 
     .display-1{
-        font-size: 30px;
+        font-size: 3rem;
     }
   
     .header {
         min-height: 0;
         width: 100%;
-        height: 80vh ;
+        height: 80vh;
        
         &__tittle {
             display: grid;
@@ -130,7 +162,7 @@
         &__subtittle {
             display: grid;
             right: 3%;
-            bottom: 30%;
+            bottom: 20%;
            
         }
         &__logo{
@@ -147,12 +179,12 @@
         &__button {
             bottom: 10%;
             left: 30%;
-            height: 60px;
-            width: 180px;
+            height: 40px;
+            width: 160px;
             overflow: hidden;
     
             &__text{
-                transform: translateY(-70%);
+                transform: translateY(-93%);
             }
             
     

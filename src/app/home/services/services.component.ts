@@ -1,11 +1,11 @@
 import { Component, OnInit, HostListener, ElementRef, ViewChild } from '@angular/core';
-import { viewAnimation } from '../../animations';
+import { viewAnimation, noFilter } from '../../animations';
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss'],
-  animations: [viewAnimation]
+  animations: [viewAnimation, noFilter]
 })
 export class ServicesComponent implements OnInit {
 

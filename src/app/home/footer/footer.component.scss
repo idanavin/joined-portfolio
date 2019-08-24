@@ -3,22 +3,32 @@ footer{
     height: 100px;
     display: flex;
 }
-
+.container {
+    display: flex;
+    
+}
 .logo{
    
-    height: 70px;
-    width: 70px;
-    background: url("~/assets/StoleronLogo.jpg");
+   
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+    background: url("~/assets/StoleronLogoFooter.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    margin:auto;
+    background-size: contain;
+    
     display: inline-flex;
+    
 }
 
 .text {
    
-    margin: auto 50px;
+    margin: auto 0 ;
+    margin-left: 50px;
+    margin-right: 0;
+
     color:  white;
+    display: inline-flex;
 }
 
 .name{
