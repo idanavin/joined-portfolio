@@ -20,18 +20,15 @@ footer{
 
     &__logo{
         width: 100px;
-        
-        margin-top: 15px;
+        height: -webkit-fill-available;
+       
         background: url("~/assets/StoleronLogoFooter.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         
         display: inline-flex;
 
-        @include for-phone-only {  
-        width: 150px;
-      
-        }
+        
     }
 
 

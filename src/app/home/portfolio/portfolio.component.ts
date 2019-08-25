@@ -10,19 +10,20 @@ import { Project } from './project/project.module';
 })
 export class PortfolioComponent implements OnInit {
   project: string;
+  assets: string = '../../../assets/';
   project1 = new Project(
     'Art Of Idan',
     'Angular HTML5 SASS',
     'Made for a comic books artist to display his skill set',
     '../../../assets/artofidanPreview.jpg',
-    ['../../../assets/artofidan-1.jpg','../../../assets/artofidan-2.jpg', '../../../assets/artofidan-3.jpg'],
+    [this.assets + 'artofidan-1.jpg',this.assets + 'artofidan-2.jpg', this.assets + 'artofidan-3.jpg'],
     'www.artofidan.com');
   project2 = new Project(
     'Dharma-Photography',
     'HTML5 SASS Javascript',
     'Made for photography buissness, Responsive UI, Auth and admin control over requested elements.',
-    '../../../assets/artofidanPreview.jpg',
-    ['...','...'],
+    this.assets + 'artofidanPreview.jpg',
+    [this.assets + 'dharma-1.png',this.assets + 'dharma-2.png', this.assets + 'dharma-3.png'],
     'www.artofidan.com');  clicked = false;
   viewed = 'notViewed';
   @ViewChild('portfolio', { static: true }) el: ElementRef;

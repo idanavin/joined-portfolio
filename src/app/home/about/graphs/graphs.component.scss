@@ -33,17 +33,15 @@ $color-3: #FF408E;
     }
     &__line {
       width: 13px;
-      // transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
       
       background: #D8D2D7;
       position: relative;
       //border-radius: 14px;
       overflow: hidden;
+      
       &-inner {
-        
-        // transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
-        //             background .1s linear;
-        // content: '';
+        content: '';
         position: absolute;
         top: 100%;
         left: 0;
@@ -52,9 +50,9 @@ $color-3: #FF408E;
         //border-radius: 14px;
         transform-origin: 50% 100%;
         transform: translateY(-100%);
-        
         transition: all .2s ease-in-out;
-        background: #f00;
+        
+        // background: #f00;
         border-right: 2px solid rgba(0, 0, 0, .3);
       }
     }
@@ -98,6 +96,7 @@ $color-3: #FF408E;
       text-align: center;
       position: relative;
       text-shadow: -1px -1px 0 rgba(0, 0, 0, 0);
+
     }
     &__trigger {
       position: absolute;

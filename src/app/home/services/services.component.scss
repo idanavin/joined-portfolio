@@ -1,8 +1,12 @@
 @import "~src/scss/mixin";
 
 .container-fluid {
-    margin-bottom: 150px;
+    margin-bottom: 250px;
     margin-top: 130px;
+    @include for-phone-only {
+        margin-bottom: 0;
+    }
+    
 }
 
 .services {
@@ -10,7 +14,7 @@
         margin: auto;
         margin-bottom: 100px;
         @include for-phone-only {
-            margin-bottom: 10px;
+          
         }
     }
 
@@ -18,9 +22,17 @@
 
 .service{
     width: 80%;
+    @include for-tablet-only {
+        width: 95%;
+
+     }
+
     height: 110%;
     // min-width: 235px;
     margin: auto;
+     @include for-phone-only {
+            
+        }
     padding: 10px;
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
     background-color: #7DAAC7;
@@ -38,9 +50,7 @@
         font-size: 1.3rem;
         color: white;
         font-weight: 600;
-        @include for-phone-only {
-            
-        }
+       
 
         &--opg{
           
@@ -107,7 +117,7 @@
 
 @include for-phone-only {  
     .col-sm{
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
  
     .service{

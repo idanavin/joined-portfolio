@@ -15,8 +15,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  gotoProjects() {
-    let el = this.project.nativeElement.parentElement.querySelector('.portfolio');
-    el.scrollIntoView();
+  gotoHome() {
+    let el = this.project.nativeElement.parentElement.querySelector('.blurbs');
+    el.scrollIntoView({behavior: "smooth"});
   }
 }

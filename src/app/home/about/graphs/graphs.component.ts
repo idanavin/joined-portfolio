@@ -13,20 +13,20 @@ export class GraphsComponent implements OnInit {
 
   us: Object = {
     "idan": {
-      "design": ["Photoshop", "Design in general"],
-      "designValue": [25, 35],
-      "code": ["HTML", "JavaScript", "Angular"],
-      "codeValue": [55, 45, 85],
-      "human": ["Trolling", "LoLing", "Cooking"],
-      "humanValue": [30, 20, 15]
+      "design": ["Animations", "Images", "Typography"],
+      "designValue": [85, 70, 55],
+      "code": ["HTML", "JavaScript", "CSS", "Angular"],
+      "codeValue": [90, 80, 85, 60],
+      "human": ["Sport", "Gaming", "Parenting"],
+      "humanValue": [0, 67, 82]
     },
     "ron": {
-      "design": ["Photoshop", "Css"],
-      "designValue": [88, 55],
-      "code": ["html", "js", "angular"],
-      "codeValue": [55, 45, 85],
-      "human": ["trolling", "LoLing", "cooking"],
-      "humanValue": [30, 20, 15]
+      "design": ["Animations", "Images", "Typography"],
+      "designValue": [55, 70, 70],
+      "code": ["HTML", "JavaScript", "CSS", "Angular"],
+      "codeValue": [91, 83, 88, 79],
+      "human": ["Sport", "Gaming", "Parenting"],
+      "humanValue": [82, 67, 0]
     }
   };
 

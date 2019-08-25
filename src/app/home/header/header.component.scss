@@ -20,7 +20,7 @@
         display: grid;
         position: absolute;
         right: 3%;
-        bottom: 2%;
+        bottom: 2.4%;
     }
     &__logo{
         position: absolute;
@@ -54,7 +54,17 @@
         height: 60px;
         width: 180px;
         cursor: pointer;
-      
+        font-weight: 600;
+        @include for-tablet-only {
+            left:auto;
+            right: 3%;
+
+         }
+        &:hover {
+            .header__button__svg {
+                transform: translate(50%, -100%) rotate(90deg);
+            }
+        }
 
         &__text{
             display: inline-block;
@@ -152,7 +162,8 @@
             width: 160px;
             overflow: hidden;
             &__text{
-                transform: translateY(-100%);
+                transform: translateY(-125%);
+                font-size: 15px;
             }
             
     
