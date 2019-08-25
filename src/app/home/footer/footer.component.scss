@@ -20,7 +20,7 @@ footer{
 
     &__logo{
         width: 100px;
-        height: 100px;
+        
         margin-top: 15px;
         background: url("~/assets/StoleronLogoFooter.jpg");
         background-repeat: no-repeat;
@@ -30,7 +30,7 @@ footer{
 
         @include for-phone-only {  
         width: 150px;
-        height: 150px;
+      
         }
     }
 

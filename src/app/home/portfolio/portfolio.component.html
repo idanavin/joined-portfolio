@@ -4,19 +4,23 @@
     </div>
     <div class="row">
         <div class="card card--1" (click)="clickBy(project2)">
+
             <div class="card__text-area text">
                 <h3 class="card__text-area__tittle">{{ project2.name }}</h3>
                 <span class="card__text-area__subtittle">{{ project2.tech }}</span>
             </div>
             <div class="card__btn button"><span>Learn More</span> </div>
+
         </div>
         <div class="card card--2" (click)="clickBy(project1)">
+
             <div class="card__text-area text">
                 <h3 class="card__text-area__tittle">{{ project1.name }}</h3>
                 <span class="card__text-area__subtittle">{{ project1.tech }}</span>
             </div>
             <div class="card__btn button"><span>Learn More</span> </div>
+
         </div>
     </div>
-    <app-modal *ngIf="clicked" (close)="clickBy()" [project]="project"></app-modal>
+    <app-modal *ngIf="clicked" (close)="clickBy(project)" [project]="project"></app-modal>
 </section>

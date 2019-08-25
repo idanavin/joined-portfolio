@@ -23,7 +23,9 @@ h2 {
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
-    
+    &__overlay{
+        background-color: rgba(256,256,256,1);
+    }
     &--1 {
         background: url("../../../assets/dharmaPreview.jpg") center center/cover no-repeat;
     }
@@ -53,6 +55,8 @@ h2 {
     &__text-area {
         opacity: 0;
         text-align: center;
+
+    
     }
 
     &__btn {
@@ -68,7 +72,7 @@ h2 {
         padding: 7px 0;
         text-align: center;
         color: #FF5524;
-
+        
         &:hover {
             background-color: #FF5524 ;
             color: white;
@@ -88,13 +92,19 @@ h2 {
             }
             .card__btn {
                 animation: none;
+                
             }
         }
         &__text-area {
+            
             opacity: 1;
+         
+                background: rgba(255, 255, 255, 0.7); 
+           
         }
         &__btn {
             opacity: 1;
+            background-color:white;
         }
         
     }
