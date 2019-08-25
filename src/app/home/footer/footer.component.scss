@@ -1,3 +1,4 @@
+@import "~src/scss/mixin";
 footer{
     background-color: #658ea9;
     height: 100px;
@@ -6,32 +7,44 @@ footer{
 .container {
     display: flex;
     
-}
-.logo{
-   
-   
-    width: 80px;
-    height: 80px;
-    margin-top: 15px;
-    background: url("~/assets/StoleronLogoFooter.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
+
+    &__text{
+        margin: auto 0 ;
+        margin-left: 50px;
+        margin-right: 0;
     
-    display: inline-flex;
-    
+        color:  white;
+        display: inline-flex;
+    }
+
+
+    &__logo{
+        width: 100px;
+        height: 100px;
+        margin-top: 15px;
+        background: url("~/assets/StoleronLogoFooter.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+        display: inline-flex;
+
+        @include for-phone-only {  
+        width: 150px;
+        height: 150px;
+        }
+    }
+
+
+    &__name{
+        font-family: "Gochi Hand", cursive;
+        font-size: 22px;
+    }
+
+    &__from{
+        @include for-phone-only {  
+            display:none;
+            }
+    }
 }
 
-.text {
-   
-    margin: auto 0 ;
-    margin-left: 50px;
-    margin-right: 0;
 
-    color:  white;
-    display: inline-flex;
-}
-
-.name{
-    font-family: "Gochi Hand", cursive;
-    font-size: 22px;
-}

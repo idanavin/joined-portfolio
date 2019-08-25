@@ -1,5 +1,9 @@
 @import "~src/scss/mixin";
-
+.display-2{
+    @include for-phone-only {  
+        font-size: 4rem;
+    }
+}
 h2 {
     margin: 70px auto;
 }
@@ -72,6 +76,7 @@ h2 {
     }
     
     @include for-phone-only {  
+
         width: 350px;
         height: 200px;
         margin-bottom: 70px;

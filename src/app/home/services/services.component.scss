@@ -39,7 +39,11 @@
         color: white;
         font-weight: 600;
         @include for-phone-only {
-            height: 10%;
+            
+        }
+
+        &--opg{
+          
         }
 
     }
@@ -105,48 +109,14 @@
     .col-sm{
         margin-bottom: 100px;
     }
-    .container-fluid {
-     
-    }
-    
-    .services {
-        &__tittle {
-        
-        }
-    }
-    
+ 
     .service{
-     
-        
-        &__tittle {
-       
-        }
-        
-        &__description {
-     
-        }
-        
         &__icon {
             filter:none;
-         
         }
-    
-       
     }
     .sepeator {
         display:none;
     }
-    .util {
-        &__margin-bottom {
-           
-        }
-    
-        &__border-top{
-    
-        }
-    
-        &__border-bottom{
 
-        }
-    }
 }
