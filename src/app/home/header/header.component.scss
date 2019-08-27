@@ -51,8 +51,8 @@
         bottom: 5%;
         left: 25%;
         border: 2px solid #FF6530;
-        height: 60px;
-        width: 180px;
+        height: 50px;
+        width: 215px;
         cursor: pointer;
         font-weight: 600;
 
@@ -103,7 +103,7 @@
         left: 3%;
         background-color: #FF6530;
         border: 2px solid #FF6530;
-        height: 60px;
+        height: 50px;
         width: 215px;
 
         // modal button css
@@ -121,7 +121,7 @@
 
         &__text{
             display: inline-block;
-            transform: translateY(-75%);
+            transform: translateY(-80%);
             padding: 12px 0px 12px 10px;
             color: white;
             font-size: 24px;
