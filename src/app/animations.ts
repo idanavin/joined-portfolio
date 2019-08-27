@@ -26,3 +26,12 @@ export let noFilter = trigger('nofilter', [
         ])
     ])
 ]);
+
+export let transformAnim = trigger('changedValue', [
+    transition('* => *', [
+        style({
+            'transform': 'translateY(0)'
+        }),
+        animate("300ms ease-in-out")
+    ])
+])

@@ -1,9 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { transformAnim } from '../../../animations';
 
 @Component({
   selector: 'app-graphs',
   templateUrl: './graphs.component.html',
-  styleUrls: ['./graphs.component.scss']
+  styleUrls: ['./graphs.component.scss'],
+  animations: [transformAnim]
 })
 export class GraphsComponent implements OnInit {
 

@@ -10,11 +10,10 @@
     </div>
     <div class="graph-card__lines">
         <div class="graph-card__line" *ngFor="let data of datasetValue">
-            <div class="graph-card__line-inner" [ngStyle]= "
-                {
-                    'transform': 'translateY(-' + data + '%)'
-                }
-            "></div>
+            <div class="graph-card__line-inner" 
+            [ngStyle]= "{ 'transform': 'translateY(-' + data + '%)' }"
+            [@changedValue]="data"
+            ></div>
         </div>
     </div>
     <div class="graph-card__controls">

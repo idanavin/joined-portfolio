@@ -1,21 +1,26 @@
+@import "~src/scss/mixin";
 
 .carousel-inner{
-    
-    height: 320px;
+    height: 30vh;
     background-color: black;
     display: inline-block;
+    @include for-phone-only {
+        height: auto;
+        min-height: 15vh;
+    }
     
 }
 .close{
-    display: block;
-    z-index:1;
-        height: 50px;
-        width: 50px;
-        margin: 50px auto;
-        fill: white;
-        position: fixed;
-        top: 0%;
-        left: 85%;
+    z-index: 10;
+    height: 35px;
+    width: 35px;
+    fill: black;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50px;
 }
 .backdrop {
     position: fixed;
@@ -36,7 +41,7 @@
     width: 75%;
     max-width: 810px;
 
-    background-image: linear-gradient(to bottom, #d4f3ff, #e8dbff);
+    background-image: linear-gradient(to bottom, rgb(255, 155, 122), rgb(255, 212, 197));
     box-shadow: 0 2px 8px rbga(0,0,0,0.26);
 
     &__tittle {
@@ -49,10 +54,11 @@
     &__content {
         height: 200px;
         padding-left: 25px;
+        @include for-phone-only {
+            height: 20vh;
+        }
     }
 }
-
-
 
 .button-enter {
     font-family: 'PT Serif', serif;
@@ -85,14 +91,12 @@
     float: right;
 }
 
-.carousel-control-next-icon{
+.carousel--btn{
     background-color: black;
-    width: 50px;
-    height: 50px;
-}
-
-.carousel-control-prev-icon{
-    background-color: black;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
+    @include for-phone-only {
+        width: 25px;
+        height: 25px;
+    }
 }

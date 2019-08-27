@@ -95,47 +95,47 @@
         display: block;
          &__overlay {
             background-color: rgba( 34,129,180,0.7);
-         }
-     }
-     
-     .blurb {
-      
-         
-         &:hover {
-             .blurb {
-     
-                 &__tittle {
-                 }
-                 &__icon {
-                 
-                 }
-                 &__description {
-                  
-                 }
-             }
-         }
-     
-         &__tittle {
-     
-         }
-     
-         &__icon {
-          
-         }
-     
-         &__description {
-       
-     
-         }
-     }
-     
-     .util {
-     
-         &__margin-left {
-           
-         }
-         &__margin-right {
-           
-         }
-     }
+        }
+    }
+    
+    .blurb {
+    
+        
+        &:hover {
+            .blurb {
+    
+                &__tittle {
+                }
+                &__icon {
+                
+                }
+                &__description {
+                
+                }
+            }
+        }
+    
+        &__tittle {
+    
+        }
+    
+        &__icon {
+        
+        }
+    
+        &__description {
+    
+    
+        }
+    }
+    
+    .util {
+    
+        &__margin-left {
+        
+        }
+        &__margin-right {
+        
+        }
+    }
 }
