@@ -48,6 +48,12 @@ h2 {
                 opacity: 1;
                 animation: moveUp 1s ease-in-out;
                 animation-fill-mode: forwards;
+                border-radius: 5px;
+   
+            box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+            transition: 0.3s;
+    display: block;
+    margin: 0 auto 20px auto;
             }
         }
     }

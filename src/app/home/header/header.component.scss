@@ -55,6 +55,18 @@
         width: 180px;
         cursor: pointer;
         font-weight: 600;
+
+        // modal button css
+       
+    
+    
+    border-radius: 5px;
+   
+    box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto 20px auto;
+        //end of modal button css
         @include for-tablet-only {
             left:auto;
             right: 3%;
@@ -93,6 +105,18 @@
         border: 2px solid #FF6530;
         height: 60px;
         width: 215px;
+
+        // modal button css
+       
+    
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right bottom, #E2A996, #FF6530);
+    box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto 20px auto;
+        //end of modal button css
 
 
         &__text{
