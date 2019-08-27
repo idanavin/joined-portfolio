@@ -29,7 +29,7 @@
         
         height: 120px;
         width: 120px;
-        background: url("~/assets/StoleronLogo.jpg");
+        background: url("~/assets/stoleron-logo-new.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -45,9 +45,24 @@
         background-size: cover;
     }
 
+    &__fiverr{
+        
+        position: absolute;
+        cursor: pointer;
+        top: 4%;
+        right: 10%;
+        
+        height: 50px;
+        width: 215px;
+        cursor: pointer;
+        background: url("~/assets/fiverr-logo-new.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
     &__button {
         position: absolute;
-        
+        text-align: center;
         bottom: 5%;
         left: 25%;
         border: 2px solid #FF6530;
@@ -80,7 +95,7 @@
 
         &__text{
             display: inline-block;
-            transform: translateY(-75%);
+            transform: translateY(-85%);
             padding: 12px 0px 12px 10px;
             color: #FF6530;
             font-size: 22px;
@@ -88,7 +103,7 @@
 
         &__svg{
             display: inline-block;
-            transform: translate(50%, -100%);
+            transform: translate(50%, -120%);
             transition: all 0.5s ease;
             height: 30px;
             width: 30px;
@@ -101,17 +116,18 @@
         cursor: pointer;
         bottom: 5%;
         left: 3%;
-        background-color: #FF6530;
         border: 2px solid #FF6530;
         height: 50px;
         width: 215px;
-
+        cursor: pointer;
+        font-weight: 600;
+        color: #FF6530;
         // modal button css
        
     
-    border: none;
+    
     border-radius: 5px;
-    background-image: linear-gradient(to right bottom, #E2A996, #FF6530);
+   
     box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
     transition: 0.3s;
     display: block;
@@ -121,10 +137,10 @@
 
         &__text{
             display: inline-block;
-            transform: translateY(-80%);
+            transform: translateY(-85%);
             padding: 12px 0px 12px 10px;
-            color: white;
-            font-size: 24px;
+           
+            font-size: 22px;
             
         }
 
