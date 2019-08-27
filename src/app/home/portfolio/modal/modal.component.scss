@@ -6,7 +6,17 @@
     display: inline-block;
     
 }
-
+.close{
+    display: block;
+    z-index:1;
+        height: 50px;
+        width: 50px;
+        margin: 50px auto;
+        fill: white;
+        position: fixed;
+        top: 0%;
+        left: 85%;
+}
 .backdrop {
     position: fixed;
     top:0;
@@ -73,4 +83,16 @@
     // border: 2px solid white;
     background-color: #EEEEEE; 
     float: right;
+}
+
+.carousel-control-next-icon{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-control-prev-icon{
+    background-color: black;
+    width: 50px;
+    height: 50px;
 }
