@@ -23,7 +23,7 @@ export class PortfolioComponent implements OnInit {
     'HTML5 SASS Javascript',
     'Made for photography buissness, Responsive UI, Auth and admin control over requested elements.',
     this.assets + 'artofidanPreview.jpg',
-    [this.assets + 'dharma-1.png',this.assets + 'dharma-2.png', this.assets + 'dharma-3.png'],
+    [this.assets + 'dharma-1.png',this.assets + 'dharma-2.png', this.assets + 'dharmaPreview.jpg'],
     'www.artofidan.com');  clicked = false;
   viewed = 'notViewed';
   @ViewChild('portfolio', { static: true }) el: ElementRef;
