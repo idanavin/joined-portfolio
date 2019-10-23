@@ -1,38 +1,26 @@
 @import "~src/scss/mixin";
 footer{
     background-color: #658ea9;
-    height: 150px;
-    display: flex;
 }
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 100px;
     
 
     &__text{
         margin: auto 0 ;
-        margin-left: 50px;
-        margin-right: 0;
-    
         color:  white;
-        display: inline-flex;
     }
 
 
     &__logo{
-        width: 100px;
-        height: -webkit-fill-available;
-       
+        width: 75px;
+        height: 75px;
         background: url("~/assets/StoleronLogoFooter.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
-        
-        display: inline-flex;
+        background-size: cover;
 
-        
     }
-
-    
-
 
     &__name{
         font-family: "Gochi Hand", cursive;
@@ -40,8 +28,9 @@ footer{
     }
 
     &__from{
+        display:none;
         @include for-phone-only {  
-            display:none;
+
             }
     }
 }
