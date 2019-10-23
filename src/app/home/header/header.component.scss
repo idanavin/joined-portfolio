@@ -62,7 +62,7 @@
             right: 0;
         }
         @include for-phone-only {
-            top: 12%;
+            top: 90%;
             right: 0%;
             height: 35px;
             width: 153px;
@@ -188,7 +188,7 @@
             top: 45%;
             left: 50%;
             height: 27vh;
-            width: 95vw;
+            width: 65vw;
         }
     
         &__button {
