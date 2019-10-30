@@ -22,16 +22,12 @@
     text-align: center;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
     height: 300px;
-   
-
     width: 300px;
     margin: 20px auto 20px auto;
     border: 6px solid #FF6530;
     background-color: rgba(255, 255, 255, 0.8);
     overflow: hidden;
-    @include for-phone-only { 
-        width: 300px;
-    }
+
     &:hover {
         .blurb {
 
@@ -75,6 +71,23 @@
         line-height: 1.5;
         font-weight: 600;
         font-style: italic;
+    }
+
+    @include for-phone-only { 
+        &__tittle {
+        }
+        &__icon {
+            animation: moveUR 1s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+        &__description {
+            text-align: left;
+            display: block;
+            transform: translateY(-90px);
+            opacity: 1;
+            // animation: moveUp 1s ease-in-out;
+            // animation-fill-mode: forwards;
+        }
     }
 }
 

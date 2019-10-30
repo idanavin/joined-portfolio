@@ -6,6 +6,9 @@
     position: relative;
     font-size: 70px;
     text-align: left;
+    @include for-small-phones {
+        font-size: 60px;
+    }
    
     &__tittle {
         display: grid;
@@ -21,6 +24,9 @@
         position: absolute;
         right: 3%;
         bottom: 2.4%;
+        @include for-small-phones {
+            bottom: 15%;
+        }
     }
     &__logo{
         position: absolute;

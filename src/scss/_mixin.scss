@@ -1,14 +1,12 @@
 @import "variables";
 
-@mixin for-phone-only {
-    @media (max-width: $breakpoint-phone) { @content; }
-}
-
-
 @mixin for-tablet-only {
     @media (min-width: $breakpoint-phone+1) and (max-width: $breakpoint-tablet) { @content; }
    
 }
-
-
-
+@mixin for-phone-only {
+    @media (max-width: $breakpoint-phone) { @content; }
+}
+@mixin for-small-phones {
+    @media (max-width: $breakpoint-small-phones) { @content; }
+}
