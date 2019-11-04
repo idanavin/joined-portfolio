@@ -3,7 +3,7 @@
 
 .container-fluid {
     margin-bottom: 250px;
-    margin-top: 130px;
+    padding-top: 100px;
     @include for-phone-only {
         margin-bottom: 0;
     }
