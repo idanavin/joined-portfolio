@@ -16,6 +16,14 @@ h2 {
     margin-top: 50px;
     padding-bottom: 80px;
 }
+.cards__container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @include for-phone-only {  
+        display: block;
+    }
+}
 .card {
     width: 500px;
     height: 350px;
