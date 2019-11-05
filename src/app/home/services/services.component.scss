@@ -25,9 +25,9 @@
 
     padding: 10px;
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
-    background-color: #7DAAC7;
+    background-color: white;
     &__tittle {
-        color: white;
+       
         text-align: center;
         font-size: 1.8rem;
         padding-top: 20px;
@@ -38,7 +38,6 @@
     
     &__description {
         font-size: 1.3rem;
-        color: white;
         font-weight: 600;
        
 
@@ -57,16 +56,26 @@
 
     &__button {
         position: absolute;
-        bottom: -35px;
+        top: 100%;
         left: 50%;
         transform: translateX(-50%);
-        width: 60%;
+        // width: 60%;
         text-align: center;
-        font-size: 2.3rem;
-        font-weight: 300;
-        background-color: $dark-orange;
-        opacity: 0.8;
-        color: $blue;
+        box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+
+        border: 2px solid #FF5524;
+        width: 170px;
+        margin: 0 auto;
+        font-size: 13pt;
+        padding: 7px 0;
+        text-align: center;
+        color: white;
+        background-color: #FF5524 ;
+       
+        &:hover {
+          
+        }
+
     }
     
     &__icon {

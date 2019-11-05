@@ -24,6 +24,7 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   &__overlay {
     background-image: linear-gradient(to bottom, rgba(111,144,161,0.7)   , rgba( 34,129,180,0.7) 60% ,rgba(  3, 36, 54,1)  );
     @include for-phone-only {
@@ -31,42 +32,74 @@ h2 {
       background-image: none;
     }
   }
-  &__card{
-    
-    width: 25rem;
-    margin: auto;
-    margin-bottom: 100px;
-    margin-top: 30px;
-    background-color: transparent;
-    border: 2px solid white;
 
+  &__card{
+    width: 90%;
+    height: 280px;
+    margin: 6% auto;
+    // margin-bottom: 100px;
+    // margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+
+    &-img_cont {
+      position: relative;
+    }
+    &-right {
+      position: relative;
+      flex-direction: row-reverse;
+    }
     @include for-phone-only { 
       width: 300px;
+      flex-direction: column;
+      height: 95vh;
     }
 
     &__img{
-        
+      width: 280px;
+      height: 280px;
       filter: grayscale(100%);
+      @include for-phone-only {
+        width: 140px;
+        height: 140px;
+      }
     }
     &__body{
-      background-color: transparent;
-      color: white;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      justify-content: center;
+      // background-color: transparent;
+      color: black;
       padding: 0;
     }
 
     &__title{
-      margin-bottom: 40px;
+      margin: 0;
       color: #300c00;
       font-size: 40px;
       background-color: rgba(256,256,256,0.7);
+      position: absolute;
+      top: 220px;
+      left: 0;
+      width: 100%;
+      @include for-phone-only {
+        top: 0;
+        right: 0;
+        left: auto;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
     &__text{
-      margin-bottom: 70px;
-      padding-top: 20px;
-      padding: 1.2rem;
+      width: 90%;
       font-size: 1.6rem;
-      height: 350px;
 
       @include for-phone-only {
         height: auto;

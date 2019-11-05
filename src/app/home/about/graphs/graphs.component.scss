@@ -1,38 +1,37 @@
 // START OF GRAPHS
 @import "~src/scss/mixin";
 
-$color-1: #338CFB;
-$color-2: #FF6530;
-$color-3: #032436;
+$color-1: rgb(48, 140, 255);
+$color-2: rgb(48, 96, 255);
+$color-3: rgb(48, 51, 255);
 
 .graph-card {
     // background: #FCFBFB;
-    
+    padding: 0 10px;
     background: transparent;
-    width: 100%;
-    //min-width: 550px;
-    height: 455px;
-    //border-radius: 10px;
+    width: 280px;
+    height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     transform: translate3d(0, 0, 0);
     &__lines {
-      height: 80%;
+      height: 165px;
       display: flex;
-      padding: 20px 10%;
+      padding: 20px 0;
       justify-content: space-around;
     }
     &__text-area {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
     &__text {
       font-size: 1.2rem;
       font-weight: 300;
     }
     &__line {
-      width: 13px;
+      margin: 0 10px;
+      width: 100%;
       transform: translate3d(0, 0, 0);
       
       background: #D8D2D7;
@@ -40,6 +39,12 @@ $color-3: #032436;
       //border-radius: 14px;
       overflow: hidden;
       
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
       &-inner {
         content: '';
         position: absolute;
@@ -124,9 +129,9 @@ $color-3: #032436;
           & ~ .graph-card__controls {
             &:after {
                 
-              transform: translateX(25px);
+              transform: translateX(8px);
               @include for-phone-only { 
-                transform: translateX(10px);
+                transform: translateX(8px);
                 
               }
               background: $color-1;
@@ -152,7 +157,7 @@ $color-3: #032436;
           }
           & ~ .graph-card__controls {
             &:after {
-              transform: translateX(157px);
+              transform: translateX(90px);
               @include for-phone-only { 
                
                 transform: translateX(108px);
@@ -180,7 +185,7 @@ $color-3: #032436;
           }
           & ~ .graph-card__controls {
             &:after {
-              transform: translateX(290px);
+              transform: translateX(173px);
               @include for-phone-only { 
                 
                 transform: translateX(207px);
@@ -189,7 +194,7 @@ $color-3: #032436;
             }
             .graph-card__control_likes {
               color: #fff;
-              text-shadow: -1px -1px 1px rgba(0, 0, 0, .5);
+              text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
             }
           }
         }
