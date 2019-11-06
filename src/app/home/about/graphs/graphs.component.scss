@@ -15,6 +15,12 @@ $color-3: rgb(48, 51, 255);
     display: flex;
     flex-direction: column;
     transform: translate3d(0, 0, 0);
+    @include for-phone-only {
+      margin: 0 auto;
+    }
+    @include for-tablet-only {
+      margin: 0 auto;
+    }
     &__lines {
       height: 165px;
       display: flex;
@@ -131,7 +137,7 @@ $color-3: rgb(48, 51, 255);
                 
               transform: translateX(8px);
               @include for-phone-only { 
-                transform: translateX(8px);
+                transform: translateX(6px);
                 
               }
               background: $color-1;
@@ -160,7 +166,7 @@ $color-3: rgb(48, 51, 255);
               transform: translateX(90px);
               @include for-phone-only { 
                
-                transform: translateX(108px);
+                transform: translateX(90px);
               }
               background: $color-2;
             }
@@ -188,7 +194,7 @@ $color-3: rgb(48, 51, 255);
               transform: translateX(173px);
               @include for-phone-only { 
                 
-                transform: translateX(207px);
+                transform: translateX(175px);
               }
               background: $color-3;
             }
