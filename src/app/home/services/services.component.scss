@@ -24,7 +24,8 @@
     margin: auto;
 
     padding: 10px;
-    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
     background-color: white;
     &__tittle {
        
@@ -58,10 +59,12 @@
         position: absolute;
         top: 100%;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
         // width: 60%;
         text-align: center;
-        box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+        -webkit-box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+                box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
 
         border: 2px solid #FF5524;
         width: 170px;
@@ -77,6 +80,30 @@
         }
 
     }
+
+    &__comming-soon {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        // width: 60%;
+        text-align: center;
+        -webkit-box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+                box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+
+        border: 2px solid #B46A55;
+        width: 170px;
+        margin: 0 auto;
+        font-size: 13pt;
+        padding: 7px 0;
+        text-align: center;
+        color: white;
+        background-color: #B46A55 ;
+       
+        
+
+    }
     
     &__icon {
         width: 70px;
@@ -84,7 +111,8 @@
         background-size: contain;
         background-repeat: no-repeat;
         margin: 60px auto;
-        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+                filter: grayscale(1);
         &--1 {
             background-image: url("~/assets/html-service.png");
         }
@@ -109,7 +137,8 @@
     }
 
     &__icon:hover{
-        filter:none;
+        -webkit-filter:none;
+                filter:none;
     }
 }
 .sepeator{
@@ -142,7 +171,8 @@
  
     .service{
         &__icon {
-            filter:none;
+            -webkit-filter:none;
+                    filter:none;
         }
     }
     .sepeator {
@@ -161,7 +191,8 @@
     }
     .service{
         &__icon {
-            filter:none;
+            -webkit-filter:none;
+                    filter:none;
         }
     }
     .sepeator {

@@ -37,12 +37,16 @@
     display: block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 75%;
     max-width: 810px;
 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 155, 122)), to(rgb(255, 212, 197)));
+
     background-image: linear-gradient(to bottom, rgb(255, 155, 122), rgb(255, 212, 197));
-    box-shadow: 0 2px 8px rbga(0,0,0,0.26);
+    -webkit-box-shadow: 0 2px 8px rbga(0,0,0,0.26);
+            box-shadow: 0 2px 8px rbga(0,0,0,0.26);
 
     &__tittle {
         text-align: center;
@@ -54,6 +58,7 @@
     &__content {
         height: 200px;
         padding-left: 25px;
+        font-size: 1.3rem;
         @include for-phone-only {
             height: 20vh;
         }
@@ -67,8 +72,11 @@
     width: 240px;
     border: none;
     border-radius: 5px;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#ff64306e), to(#fffc3083));
     background-image: linear-gradient(to right bottom, #ff64306e, #fffc3083);
-    box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+    -webkit-box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+            box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     display: block;
     margin: 0 auto 20px auto;

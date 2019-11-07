@@ -9,12 +9,19 @@ $color-3: rgb(48, 51, 255);
     // background: #FCFBFB;
     padding: 0 10px;
     background: transparent;
+    font-weight: bold;
     width: 280px;
     height: 100%;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    transform: translate3d(0, 0, 0);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
     @include for-phone-only {
       margin: 0 auto;
     }
@@ -23,13 +30,19 @@ $color-3: rgb(48, 51, 255);
     }
     &__lines {
       height: 165px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding: 20px 0;
-      justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
     }
     &__text-area {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
     }
     &__text {
       font-size: 1.2rem;
@@ -38,7 +51,8 @@ $color-3: rgb(48, 51, 255);
     &__line {
       margin: 0 10px;
       width: 100%;
-      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
       
       background: #D8D2D7;
       position: relative;
@@ -53,14 +67,18 @@ $color-3: rgb(48, 51, 255);
       }
       &-inner {
         content: '';
+        
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         height: 100%;
         //border-radius: 14px;
-        transform-origin: 50% 100%;
-        transform: translateY(-100%);
+        -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         
         // background: #f00;
@@ -72,14 +90,27 @@ $color-3: rgb(48, 51, 255);
       background: transparent;
       position: relative;
       &-inner {
+        
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
       }
       &:after {
+        -webkit-transition: background .1s linear,
+                    -webkit-transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: background .1s linear,
+                    -webkit-transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
                     background .1s linear;
+        transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+                    background .1s linear,
+                    -webkit-transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         content: '';
         width: 80px;
         height: 40px;
@@ -95,8 +126,10 @@ $color-3: rgb(48, 51, 255);
     }
     &__control {
       //border-radius: 30px;
+      -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out;
-      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
       text-transform: uppercase;
       font-size: 1rem;
       line-height: 40px;
@@ -135,9 +168,12 @@ $color-3: rgb(48, 51, 255);
           & ~ .graph-card__controls {
             &:after {
                 
-              transform: translateX(8px);
+              -webkit-transform: translateX(8px);
+                
+                      transform: translateX(8px);
               @include for-phone-only { 
-                transform: translateX(6px);
+                -webkit-transform: translateX(6px); 
+                        transform: translateX(6px);
                 
               }
               background: $color-1;
@@ -163,10 +199,13 @@ $color-3: rgb(48, 51, 255);
           }
           & ~ .graph-card__controls {
             &:after {
-              transform: translateX(90px);
+              -webkit-transform: translateX(90px);
+                      transform: translateX(90px);
               @include for-phone-only { 
                
-                transform: translateX(90px);
+                -webkit-transform: translateX(90px); 
+               
+                        transform: translateX(90px);
               }
               background: $color-2;
             }
@@ -191,10 +230,13 @@ $color-3: rgb(48, 51, 255);
           }
           & ~ .graph-card__controls {
             &:after {
-              transform: translateX(173px);
+              -webkit-transform: translateX(173px);
+                      transform: translateX(173px);
               @include for-phone-only { 
                 
-                transform: translateX(175px);
+                -webkit-transform: translateX(175px); 
+                
+                        transform: translateX(175px);
               }
               background: $color-3;
             }

@@ -20,7 +20,8 @@
 
 .blurb {
     text-align: center;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
     height: 300px;
     width: 300px;
     margin: 20px auto 20px auto;
@@ -34,22 +35,26 @@
             &__tittle {
             }
             &__icon {
-                animation: moveUR 1s ease-in-out;
-                animation-fill-mode: forwards;
+                -webkit-animation: moveUR 1s ease-in-out;
+                        animation: moveUR 1s ease-in-out;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;
             }
             &__description {
                 text-align: left;
                 display: block;
-                animation: moveUp 1s ease-in-out;
-                animation-fill-mode: forwards;
+                -webkit-animation: moveUp 1s ease-in-out;
+                        animation: moveUp 1s ease-in-out;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;
             }
         }
     }
 
     &__tittle {
         font-size: 2.5rem;
-        font-family: 'Gochi Hand', cursive;
-        text-transform: uppercase;
+        // font-family: 'Gochi Hand', cursive;
+        // text-transform: uppercase;
         padding-top: 30px;
         margin-bottom: 50px;
     }
@@ -70,20 +75,23 @@
         // height: 200px;
         line-height: 1.5;
         font-weight: 600;
-        font-style: italic;
+        
     }
 
     @include for-phone-only { 
         &__tittle {
         }
         &__icon {
-            animation: moveUR 1s ease-in-out;
-            animation-fill-mode: forwards;
+            -webkit-animation: moveUR 1s ease-in-out;
+                    animation: moveUR 1s ease-in-out;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
         }
         &__description {
             text-align: left;
             display: block;
-            transform: translateY(-90px);
+            -webkit-transform: translateY(-90px);
+                    transform: translateY(-90px);
             opacity: 1;
             // animation: moveUp 1s ease-in-out;
             // animation-fill-mode: forwards;
