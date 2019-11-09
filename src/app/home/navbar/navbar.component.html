@@ -1,16 +1,16 @@
 <nav class="nav__container container-fluid" #stickyMenu [class.sticky] = "sticky">
     <ul class="nav nav-pills nav-justified">
-        <li class="nav__box nav-item"  (click)="goTo('blurbs')">
-          <a class="nav__button nav-link active"><b>Home</b></a>
+        <li class="nav__box nav-item" (click)="goTo('blurbs')">
+          <a class="nav__button nav-link" [class.active] = 'active === 0'><b>Home</b></a>
         </li>
         <li class="nav__box nav-item"  (click)="goTo('services')">
-          <a class="nav__button nav-link"><b>Services</b></a>
+          <a class="nav__button nav-link" [class.active] = 'active === 1'><b>Services</b></a>
         </li>
         <li class="nav__box nav-item" (click)="goTo('about')">
-          <a class="nav__button nav-link"><b>About</b></a>
+          <a class="nav__button nav-link" [class.active] = 'active === 2'><b>About</b></a>
         </li>
         <li class="nav__box nav-item" (click)="goTo('portfolio')">
-          <a class="nav__button nav-link"><b>Projects</b></a>
+          <a class="nav__button nav-link" [class.active] = 'active === 3'><b>Projects</b></a>
         </li>
 
         <!--
