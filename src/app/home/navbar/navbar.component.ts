@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild, HostListener, ElementRef, Input } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener, ElementRef, Input, Optional } from '@angular/core';
+import { HomeComponent } from '../home.component';
 
 @Component({
   selector: 'app-navbar',
@@ -8,46 +9,53 @@ import { Component, OnInit, ViewChild, HostListener, ElementRef, Input } from '@
 export class NavbarComponent implements OnInit {
 
   @ViewChild('stickyMenu', { static: true }) menuElement: ElementRef;
+
+  @Input() sectionHeight: [];
+
   sticky: boolean = false;
   active: any = '';
   menuPosition: any;
-  @Input() sectionHeight: [];
+
+  constructor(@Optional() private homeComponent: HomeComponent) { }
+
+  ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+    this.menuPosition = this.menuElement.nativeElement.offsetTop;
+  }
+
+  goTo(e) {
+
+    let el = this.homeComponent.el.nativeElement.querySelector(`.${e}`);
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+
   @HostListener('window:scroll')
   handleScroll() {
     const windowScroll = window.pageYOffset;
     //For Sticky
-    if (windowScroll >= this.menuPosition) {
-      this.sticky = true;
-    } else {
-      this.sticky = false;
-    }
+    this.sticky = windowScroll >= this.menuPosition;
+
     // For active class
-    this.sectionHeight.forEach((element, index) => {
-      if (element < windowScroll && this.sectionHeight[index + 1] >= windowScroll) {
-        this.active = index;
+    this.sectionHeight.forEach((elementOffset, index) => {
+
+
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        this.active = this.sectionHeight.length - 1;
+        return;
       }
-      // For last link (need to check if works fine)
-      else if ((this.sectionHeight[index - 1] + 500) < windowScroll && element > windowScroll && (this.sectionHeight.length-1) === index) {
-        this.active = index;
+
+      if (index === this.sectionHeight.length - 1) {
+        if (elementOffset <= windowScroll) {
+          this.active = index;
+        }
+      } else {
+        if (elementOffset <= windowScroll && this.sectionHeight[index + 1] > windowScroll) {
+          this.active = index;
+        }
       }
-      // else console.log(this.sectionHeight[index - 1], element, windowScroll, this.sectionHeight.length, index); 
     });
-
-  }
-
-  constructor() { }
-
-  ngOnInit() {
-
-  }
-  ngAfterViewInit() {
-    this.menuPosition = this.menuElement.nativeElement.offsetTop
-    console.log(this.sectionHeight);
-  }
-
-  goTo(e) {
-    let el = this.menuElement.nativeElement.parentElement.parentElement.querySelector(`.${e}`);
-    el.scrollIntoView({ behavior: "smooth" });
   }
 
 }
