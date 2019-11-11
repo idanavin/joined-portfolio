@@ -29,21 +29,22 @@ h2 {
     height: 350px;
     margin: auto;
     cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: center center/cover no-repeat;
+    // background-repeat: no-repeat;
+    // background-position: center;
     &__overlay{
         background-color: rgba(256,256,256,1);
     }
-    &--1 {
-        background: url("../../../assets/dharmaPreview.jpg") center center/cover no-repeat;
-    }
-    &--2 {
-        background: url("../../../assets/artofidanPreview.jpg") center center/cover no-repeat;
-    }
+    // &--1 {
+    //     background: url("../../../assets/dharmaPreview.jpg") center center/cover no-repeat;
+    // }
+    // &--2 {
+    //     background: url("../../../assets/artofidanPreview.jpg") center center/cover no-repeat;
+    // }
 
     &:hover {
-        background: white; 
-        background-size: cover;
+        background: white;
+        background-image: none !important;
 
         .card {
             &__text-area {
@@ -57,11 +58,10 @@ h2 {
                 animation: moveUp 1s ease-in-out;
                 animation-fill-mode: forwards;
                 border-radius: 5px;
-   
-            box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
-            transition: 0.3s;
-    display: block;
-    margin: 0 auto 20px auto;
+                box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
+                transition: 0.3s;
+                display: block;
+                margin: 0 auto 20px auto;
             }
         }
     }

@@ -1,0 +1,36 @@
+{
+    "project1": {
+        "title": "Art Of Idan",
+        "tech": "Angular HTML5 SASS",
+        "description": "Made for a comic books artist to display his skill set",
+        "coverImage": "artofidanPreview.jpg",
+        "images": [
+            "artofidan-1.jpg",
+            "artofidan-2.jpg",
+            "artofidan-3.jpg"
+        ],
+        "link": "www.artofidan.com"
+    },
+    "project2": {
+        "title": "Dharma-Photography",
+        "tech": "HTML5 SASS Javascript",
+        "description": "Made for photography buissness, Responsive UI, Auth and admin control over requested elements.",
+        "coverImage": "dharmaPreview.jpg",
+        "images": [
+            "dharma-1.png",
+            "dharma-1.png",
+            "dharma-1.png"
+        ],
+        "link": "#"
+    },
+    "project3": {
+        "title": "Mockup",
+        "tech": "Angular Nodejs",
+        "description": "Converted a sample website image into a working single page application with a backend. We use Nodejs and database for a working login backend.",
+        "coverImage": "mockup.jp",
+        "images": [
+            "mockup1.jp"
+        ],
+        "link": "#"
+    }
+}

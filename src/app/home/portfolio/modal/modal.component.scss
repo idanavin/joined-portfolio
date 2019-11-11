@@ -57,8 +57,9 @@
     }
     &__content {
         height: 200px;
-        padding-left: 25px;
+        padding: 0 25px;
         font-size: 1.3rem;
+        text-align: justify;
         @include for-phone-only {
             height: 20vh;
         }
@@ -72,14 +73,18 @@
     width: 240px;
     border: none;
     border-radius: 5px;
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#ff64306e), to(#fffc3083));
-    background-image: linear-gradient(to right bottom, #ff64306e, #fffc3083);
+    // background-image: -webkit-gradient(linear, left top, right bottom, from(#ff64306e), to(#fffc3083));
+    // background-image: linear-gradient(to right bottom, #ff64306e, #fffc3083);
     -webkit-box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
             box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.301);
     -webkit-transition: 0.3s;
     transition: 0.3s;
     display: block;
     margin: 0 auto 20px auto;
+    & a {
+        color: black;
+        text-decoration: none;
+    }
 }
 
 .button-enter:hover {
