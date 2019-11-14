@@ -69,8 +69,8 @@ h2 {
     }
 
     &__img{
-      width: 280px;
-      height: 280px;
+      width: 276px;
+      height: 276px;
       filter: grayscale(100%);
       @include for-phone-only {
         width: 140px;
@@ -93,7 +93,7 @@ h2 {
       font-size: 40px;
       background-color: rgba(256,256,256,0.7);
       position: absolute;
-      top: 220px;
+      top: 216px;
       left: 0;
       width: 100%;
       @include for-phone-only {
