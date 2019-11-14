@@ -32,9 +32,13 @@
     &:hover {
         .blurb {
 
-            &__tittle {
-            }
             &__icon {
+                -webkit-animation: moveUR 1s ease-in-out;
+                        animation: moveUR 1s ease-in-out;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;
+            }
+            &__more {
                 -webkit-animation: moveUR 1s ease-in-out;
                         animation: moveUR 1s ease-in-out;
                 -webkit-animation-fill-mode: forwards;
@@ -56,15 +60,20 @@
         // font-family: 'Gochi Hand', cursive;
         // text-transform: uppercase;
         padding-top: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     &__icon {
         display: block;
         height: 80px;
         width: 80px;
-        margin: 50px auto;
+        margin: 0 auto;
         fill: #FF6530;
+    }
+    &__more {
+        font-size: 1.3rem;
+        color: #FF6530;
+        margin-bottom: 55px;
     }
 
     &__description {
@@ -79,9 +88,14 @@
     }
 
     @include for-phone-only { 
-        &__tittle {
-        }
+        
         &__icon {
+            -webkit-animation: moveUR 1s ease-in-out;
+                    animation: moveUR 1s ease-in-out;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+        }
+        &__more {
             -webkit-animation: moveUR 1s ease-in-out;
                     animation: moveUR 1s ease-in-out;
             -webkit-animation-fill-mode: forwards;
@@ -116,47 +130,6 @@
         display: block;
          &__overlay {
             background-color: rgba( 34,129,180,0.7);
-        }
-    }
-    
-    .blurb {
-    
-        
-        &:hover {
-            .blurb {
-    
-                &__tittle {
-                }
-                &__icon {
-                
-                }
-                &__description {
-                
-                }
-            }
-        }
-    
-        &__tittle {
-    
-        }
-    
-        &__icon {
-        
-        }
-    
-        &__description {
-    
-    
-        }
-    }
-    
-    .util {
-    
-        &__margin-left {
-        
-        }
-        &__margin-right {
-        
         }
     }
 }
